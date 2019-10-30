@@ -8,3 +8,33 @@ Auteurs :
 Date de création : 30/10/19
 Date de dernière modification : XX/11/19
 */
+
+/* Alignement*/
+.left{
+	float : left;
+}
+
+.right{
+	float : right;
+}
+
+.inline{
+	display : inline;
+}
+
+.inline-block{
+	display : inline-block;
+}
+
+/* Dimensions */
+.page{
+	width : 100%;
+}
+
+.half-page{
+	max-width : 50%;
+}
+
+.width-100{
+	width : 100%;
+}
