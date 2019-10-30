@@ -35,6 +35,20 @@ Date de dernière modification : XX/11/19
 	max-width : 50%;
 }
 
-.width-100{
-	width : 100%;
+.width-750{
+	width : 750px;
+}
+
+.maximale-relative-width-70{
+	max-width:70%;
+}
+
+/* Margin et padding*/
+
+.no-margin{
+	margin : 0px !important;
+}
+
+.no-padding{
+	padding : 0px !important;
 }
