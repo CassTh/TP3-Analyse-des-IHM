@@ -31,26 +31,144 @@ Date de dernière modification : XX/11/19
 	
 	<body>
 		<div class="container page inline-block">
-			<div class="left half-page">                          
-				<div class="border rounded shadow-sm m-1 p-1 width-750">
-				Inputs
+			<div class="left half-page">
+			Inputs
+				<div class="border rounded shadow-sm m-1 p-1 width-150">
+				Alpha
+					<div name="table-inputs-alpha" class="container">
+						<div name="title-line" class="row">
+							<div class="col-2 no-padding mx-auto">&nbsp;</div>
+							<div class="col-5 no-padding mx-auto text-center">Price Shift</div>
+							<div class="col-5 no-padding mx-auto text-center">Unlimited Data Tariff</div>
+						</div>
+						<div name="radio-button-line" class="row">
+							<div class="col-2 no-padding mx-auto">&nbsp;</div>
+							<div class="col-5">
+								<div class="row">
+									<div class="col">&nbsp;</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="all">
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="custom">
+									</div>
+									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+							<div class="col-5 no-padding">
+								<div class="row">
+									<div class="col">&nbsp;</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="all">
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="custom">
+									</div>
+									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div name="radio-label-line" class="row">
+							<div class="col-2 no-padding mx-auto">&nbsp;</div>
+							<div class="col-5">
+								<div class="row">
+									<div class="col">&nbsp;</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">All</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">Custom</label>
+									</div>
+									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+							<div class="col-5 no-padding">
+								<div class="row">
+									<div class="col">&nbsp;</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">All</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">Custom</label>
+									</div>
+									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div name="data-label-line" class="row">
+							<div class="col-2 mx-auto no-padding">&nbsp;</div>
+							<div class="col-5 mx-auto no-padding">&nbsp;</div>
+							<div class="col-5">
+								<div class="row">
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">none</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">5£</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">10£</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <label class="mx-auto">15£</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div name="alpha-data-line" class="row">
+							<div class="col-2 mx-auto no-padding">&nbsp;</div>
+							<div class="col-5">
+								<div class="row">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
+									</div>
+									<div class="col-2">XX%</div>
+								</div>	
+							</div>
+							<div class="col-5">
+								<div class="row">
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="all">
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="custom">
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="all">
+									</div>
+									<div class="col form-check-inline no-padding">
+										  <input class="mx-auto" type="radio" value="custom">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div name="high-data-tariff-line" class="row">
+							<div class="col-3 no-padding">High Data Tariff</div>
+							<div class="col-9 mx-auto no-padding">
+								<div class="row">
+									<div class="col form-check-inline no-padding">
+										<input class="form-check-input" type="radio" value="none">
+										<label class="no-padding text-right">None</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										<input class="form-check-input" type="radio" value="100GB">
+										<label class="no-padding text-right">100GB</label>	
+									</div>
+									<div class="col form-check-inline no-padding">
+										<label class="no-padding text-right">&nbsp;</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="border rounded shadow-sm m-1 p-1 width-150">
+				Others
 					<div name="table-inputs" class="container">
 						<div name="title-line" class="row">
 							<div class="col-2 no-padding mx-auto">&nbsp;</div>
-							<div class="col-5 no-padding mx-auto">
-								<div class="row no-padding">
-									<div class="col-2 no-margin">&nbsp;</div>
-									<div class="col-8 no-margin text-center">Price Shift</div>
-									<div class="col-2 no-margin">&nbsp;</div>
-								</div>
-							</div>
-							<div class="col-5 no-padding mx-auto">
-								<div class="row no-padding">
-									<div class="col-2 no-margin">&nbsp;</div>
-									<div class="col-8 no-margin text-center">Unlimited Data Tariff</div>
-									<div class="col-2 no-margin">&nbsp;</div>
-								</div>
-							</div>
+							<div class="col-5 no-padding mx-auto text-center">Price Shift</div>
+							<div class="col-5 no-padding mx-auto text-center">Unlimited Data Tariff</div>
 						</div>
 						<div name="radio-button-line" class="row">
 							<div class="col-2 no-padding mx-auto">&nbsp;</div>
@@ -130,10 +248,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Beta</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -157,10 +275,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Gamma</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -184,10 +302,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Delta</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -211,10 +329,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Epsilon</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -238,10 +356,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Iota</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -265,10 +383,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Theta</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -292,10 +410,10 @@ Date de dernière modification : XX/11/19
 							<div class="col-2 mx-auto no-padding">Kappa</div>
 							<div class="col-5">
 								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
+									<div class="col-8">
+										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col">XX%</div>
+									<div class="col-2">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -316,68 +434,75 @@ Date de dernière modification : XX/11/19
 							</div>
 						</div>
 					</div>
-				</div>                                       
-				<div class="border rounded shadow-sm m-1 p-1 width-750">
-				Alpha
-					<div name="table-inputs" class="container">
-						<div name="alpha-data-line" class="row">
-							<div class="col-2 mx-auto no-padding">&nbsp;</div>
-							<div class="col-5">
-								<div class="row">
-									<div class="col">
-										<input type="range" min="0" max="100" value="50" class="slider">
-									</div>
-									<div class="col">XX%</div>
-								</div>	
-							</div>
-							<div class="col-5">
+				</div>                                                                             
+				<div class="border rounded shadow-sm m-1 p-1 width-150">
+				Filters
+					<div name="table-filters" class="container">
+						<div name="consumer-segment-line" class="row">
+							<div class="col-3 mx-auto no-padding">Consumer segment</div>
+							<div class="col-9 mx-auto no-padding">
 								<div class="row">
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="all">
+										<input class="form-check-input" type="radio" value="">
+										<label class="no-padding text-right">New</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="custom">
+										<input class="form-check-input" type="radio" value="">
+										<label class="no-padding text-right">Recontracted</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="all">
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="custom">
+										<input class="form-check-input" type="radio" value="">
+										<label class="no-padding text-right">Both</label>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div name="high-data-tariff-line" class="row">
-							<div class="col-2 no-padding">High Data Tariff</div>
-							<div class="col-5 no-padding">
+						<div name="consumer-type-line-1" class="row">
+							<div class="col-3 mx-auto no-padding">Consumer type</div>
+							<div class="col-9 mx-auto no-padding">
 								<div class="row">
-									<div class="col">&nbsp;</div>
 									<div class="col form-check-inline no-padding">
-										<label class="mx-auto no-padding">None</label>
+										<input class="form-check-input" type="checkbox" value="">
+										<label class="no-padding text-right">Savvy Surfer</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										<input class="mx-auto no-padding" type="radio" value="none">
+										<input class="form-check-input" type="checkbox" value="">
+										<label class="no-padding text-right">Digital Dynamos</label>
 									</div>
-									<div class="col">&nbsp;</div>
 								</div>
 							</div>
-							<div class="col-5 no-padding">
+						</div>
+						<div name="consumer-type-line-2" class="row">
+							<div class="col-3 mx-auto no-padding">&nbsp;</div>
+							<div class="col-9 mx-auto no-padding">
 								<div class="row">
-									<div class="col">&nbsp;</div>
 									<div class="col form-check-inline no-padding">
-										<label class="mx-auto no-padding">100GB</label>										
+										<input class="form-check-input" type="checkbox" value="">
+										<label class="no-padding text-right">Top-end Techtastic</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										<input class="mx-auto no-padding" type="radio" value="100GB">
+										<input class="form-check-input" type="checkbox" value="">
+										<label class="no-padding text-right">Price Prioritizer</label>
 									</div>
-									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div name="consumer-type-line-3" class="row">
+							<div class="col-3 mx-auto no-padding">&nbsp;</div>
+							<div class="col-9 mx-auto no-padding">
+								<div class="row">
+									<div class="col form-check-inline no-padding">
+										<input class="form-check-input" type="checkbox" value="">
+										<label class="no-padding text-right">Indulgent Imitators</label>
+									</div>
+									<div class="col form-check-inline no-padding">
+										<input class="form-check-input" type="checkbox" value="">
+										<label class="no-padding text-right">Hesitant Homebodies</label>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>                                       
-				<div class="border rounded shadow-sm m-1 p-1 width-750">
-				Filters 
 				</div>
 			</div>
 			<div class="bg-info half-page right">

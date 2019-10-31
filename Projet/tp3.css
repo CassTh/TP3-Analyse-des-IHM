@@ -35,12 +35,17 @@ Date de dernière modification : XX/11/19
 	max-width : 50%;
 }
 
-.width-750{
-	width : 750px;
+.maximale-relative-width-200{
+	max-width : 200% !important;
+	min-width : 75% !important;
 }
 
-.maximale-relative-width-70{
-	max-width:70%;
+.maximale-relative-width-75{
+	max-width: 75% !important;
+}
+
+.width-150{
+	width : 165%;
 }
 
 /* Margin et padding*/
@@ -56,4 +61,8 @@ Date de dernière modification : XX/11/19
 /* Mise en forme du texte*/
 .text-center{
 	text-align : center;
+}
+
+.text-right{
+	text-align : right;
 }
