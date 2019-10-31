@@ -52,3 +52,8 @@ Date de dernière modification : XX/11/19
 .no-padding{
 	padding : 0px !important;
 }
+
+/* Mise en forme du texte*/
+.text-center{
+	text-align : center;
+}
