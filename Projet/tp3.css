@@ -26,6 +26,10 @@ Date de dernière modification : XX/11/19
 	display : inline-block;
 }
 
+@media (max-width: 600px) {
+		
+}
+
 /* Dimensions */
 .page{
 	width : 100%;
