@@ -40,6 +40,10 @@ Date de dernière modification : XX/11/19
 	min-width : 75% !important;
 }
 
+.maximale-relative-width-250{
+	max-width: 250% !important;
+}
+
 .maximale-relative-width-75{
 	max-width: 75% !important;
 }
@@ -65,4 +69,16 @@ Date de dernière modification : XX/11/19
 
 .text-right{
 	text-align : right;
+}
+
+.text-size-125{
+	font-size : 125%;
+}
+
+.text-size-90{
+	font-size : 90%;
+}
+
+.text-size-85{
+	font-size : 85%;
 }
