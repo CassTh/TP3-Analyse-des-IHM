@@ -16,7 +16,7 @@ Date de dernière modification : XX/11/19
 		<title>Price Elasticity</title>
 		
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta id="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="stylesheet" href="tp3.css">						
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -30,99 +30,50 @@ Date de dernière modification : XX/11/19
 	</head>
 	
 	<body>
-		<div class="container page inline-block no-padding no-margin">
-			<div class="left half-page">
-			Inputs
-				<div class="border rounded shadow-sm m-1 p-2 width-150 no">
-				Alpha
-					<div name="table-inputs-alpha" class="container">
-						<div name="title-line" class="row">
+		<div id="page" class="container page inline-block no-padding no-margin">
+			<div id="inputs" class="left half-page">
+				<div id="inputs-title-block" class="container no-padding no-margin">
+					<div clas="row">
+						<div class="col font-weight-bold h5">Inputs</div>
+						<!--<div id ="inputs-icons" class=""></div>-->
+					</div>
+				</div>
+				<div class="border rounded shadow-sm m-1 p-2 width-150">
+					<div class="col font-weight-bold h6">Alpha</div>
+					<div id="table-inputs-alpha" class="container">
+						<div id="title-line" class="row">
 							<div class="col-2 no-padding mx-auto">&nbsp;</div>
 							<div class="col-5 no-padding mx-auto text-center">Price Shift</div>
 							<div class="col-5 no-padding mx-auto text-center">Unlimited Data Tariff</div>
 						</div>
-						<div name="radio-button-line" class="row">
-							<div class="col-2 no-padding mx-auto">&nbsp;</div>
-							<div class="col-5">
-								<div class="row">
-									<div class="col">&nbsp;</div>
-									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="all">
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="custom">
-									</div>
-									<div class="col">&nbsp;</div>
-								</div>
-							</div>
-							<div class="col-5 no-padding">
-								<div class="row">
-									<div class="col">&nbsp;</div>
-									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="all">
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="custom">
-									</div>
-									<div class="col">&nbsp;</div>
-								</div>
-							</div>
-						</div>
-						<div name="radio-label-line" class="row">
-							<div class="col-2 no-padding mx-auto">&nbsp;</div>
-							<div class="col-5">
-								<div class="row">
-									<div class="col">&nbsp;</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">All</label>
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">Custom</label>
-									</div>
-									<div class="col">&nbsp;</div>
-								</div>
-							</div>
-							<div class="col-5 no-padding">
-								<div class="row">
-									<div class="col">&nbsp;</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">All</label>
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">Custom</label>
-									</div>
-									<div class="col">&nbsp;</div>
-								</div>
-							</div>
-						</div>
-						<div name="data-label-line" class="row">
+						<div id="data-label-line" class="row">
 							<div class="col-2 mx-auto no-padding">&nbsp;</div>
 							<div class="col-5 mx-auto no-padding">&nbsp;</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">none</label>
+										  <label class="mx-auto font-weight-light">none</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">5£</label>
+										  <label class="mx-auto font-weight-light">5£</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">10£</label>
+										  <label class="mx-auto font-weight-light">10£</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">15£</label>
+										  <label class="mx-auto font-weight-light">15£</label>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div name="alpha-data-line" class="row">
+						<div id="alpha-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">&nbsp;</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -142,7 +93,7 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="high-data-tariff-line" class="row">
+						<div id="high-data-tariff-line" class="row">
 							<div class="col-3 no-padding">High Data Tariff</div>
 							<div class="col-9 mx-auto no-padding">
 								<div class="row">
@@ -163,23 +114,25 @@ Date de dernière modification : XX/11/19
 					</div>
 				</div> 
 				<div class="border rounded shadow-sm m-1 p-2 width-150">
-				Others
-					<div name="table-inputs" class="container">
-						<div name="title-line" class="row">
+					<div class="col font-weight-bold h6">Others</div>
+					<div id="table-inputs" class="container">
+						<div id="title-line" class="row">
 							<div class="col-2 no-padding mx-auto">&nbsp;</div>
 							<div class="col-5 no-padding mx-auto text-center">Price Shift</div>
 							<div class="col-5 no-padding mx-auto text-center">Unlimited Data Tariff</div>
 						</div>
-						<div name="radio-button-line" class="row">
+						<div id="radio-button-line" class="row">
 							<div class="col-2 no-padding mx-auto">&nbsp;</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col">&nbsp;</div>
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="all">
+											<input class="form-check-input" type="radio" value="all">
+											<label class="no-padding text-right font-weight-light font-italic">All</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="custom">
+											<input class="form-check-input" type="radio" value="custom">
+											<label class="no-padding text-right font-weight-light font-italic">Custom</label>
 									</div>
 									<div class="col">&nbsp;</div>
 								</div>
@@ -188,70 +141,45 @@ Date de dernière modification : XX/11/19
 								<div class="row">
 									<div class="col">&nbsp;</div>
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="all">
+											<input class="form-check-input" type="radio" value="all">
+											<label class="no-padding text-right font-weight-light font-italic">All</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <input class="mx-auto" type="radio" value="custom">
+											<input class="form-check-input" type="radio" value="custom">
+											<label class="no-padding text-right font-weight-light font-italic">Custom</label>
 									</div>
 									<div class="col">&nbsp;</div>
 								</div>
 							</div>
 						</div>
-						<div name="radio-label-line" class="row">
-							<div class="col-2 no-padding mx-auto">&nbsp;</div>
-							<div class="col-5">
-								<div class="row">
-									<div class="col">&nbsp;</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">All</label>
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">Custom</label>
-									</div>
-									<div class="col">&nbsp;</div>
-								</div>
-							</div>
-							<div class="col-5 no-padding">
-								<div class="row">
-									<div class="col">&nbsp;</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">All</label>
-									</div>
-									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">Custom</label>
-									</div>
-									<div class="col">&nbsp;</div>
-								</div>
-							</div>
-						</div>
-						<div name="data-label-line" class="row">
+						<div id="data-label-line" class="row">
 							<div class="col-2 mx-auto no-padding">&nbsp;</div>
 							<div class="col-5 mx-auto no-padding">&nbsp;</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">none</label>
+										  <label class="mx-auto font-weight-light">none</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">5£</label>
+										  <label class="mx-auto font-weight-light">5£</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">10£</label>
+										  <label class="mx-auto font-weight-light">10£</label>
 									</div>
 									<div class="col form-check-inline no-padding">
-										  <label class="mx-auto">15£</label>
+										  <label class="mx-auto font-weight-light">15£</label>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div name="beta-data-line" class="row">
+						<div id="beta-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Beta</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -271,14 +199,14 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="gamma-data-line" class="row">
+						<div id="gamma-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Gamma</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -298,14 +226,14 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="delta-data-line" class="row">
+						<div id="delta-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Delta</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -325,14 +253,14 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="epsilon-data-line" class="row">
+						<div id="epsilon-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Epsilon</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -352,14 +280,14 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="iota-data-line" class="row">
+						<div id="iota-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Iota</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -379,14 +307,14 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="theta-data-line" class="row">
+						<div id="theta-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Theta</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -406,14 +334,14 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="kappa-data-line" class="row">
+						<div id="kappa-data-line" class="row">
 							<div class="col-2 mx-auto no-padding">Kappa</div>
 							<div class="col-5">
 								<div class="row">
 									<div class="col-8">
 										<input type="range" min="0" max="100" value="50" class="slider maximale-relative-width-100">
 									</div>
-									<div class="col-2">XX%</div>
+									<div class="col-2 font-weight-light">XX%</div>
 								</div>	
 							</div>
 							<div class="col-5">
@@ -436,9 +364,9 @@ Date de dernière modification : XX/11/19
 					</div>
 				</div>                                                                             
 				<div class="border rounded shadow-sm m-1 p-2 width-150">
-				Filters
-					<div name="table-filters" class="container">
-						<div name="consumer-segment-line" class="row">
+					<div class="col font-weight-bold h6">Filters</div>
+					<div id="table-filters" class="container">
+						<div id="consumer-segment-line" class="row">
 							<div class="col-3 mx-auto no-padding">Consumer segment</div>
 							<div class="col-9 mx-auto no-padding">
 								<div class="row">
@@ -457,7 +385,7 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="consumer-type-line-1" class="row">
+						<div id="consumer-type-line-1" class="row">
 							<div class="col-3 mx-auto no-padding">Consumer type</div>
 							<div class="col-9 mx-auto no-padding">
 								<div class="row">
@@ -472,7 +400,7 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="consumer-type-line-2" class="row">
+						<div id="consumer-type-line-2" class="row">
 							<div class="col-3 mx-auto no-padding">&nbsp;</div>
 							<div class="col-9 mx-auto no-padding">
 								<div class="row">
@@ -487,7 +415,7 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div name="consumer-type-line-3" class="row">
+						<div id="consumer-type-line-3" class="row">
 							<div class="col-3 mx-auto no-padding">&nbsp;</div>
 							<div class="col-9 mx-auto no-padding">
 								<div class="row">
