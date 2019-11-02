@@ -23,7 +23,9 @@ Date de dernière modification : XX/11/19
 }
 
 .inline-block{
-	display : inline-block;
+	display : inline-block;	
+    box-sizing: border-box;
+	
 }
 
 @media (max-width: 600px) {
@@ -36,7 +38,11 @@ Date de dernière modification : XX/11/19
 }
 
 .half-page{
-	max-width : 50%;
+	max-width : 49%;
+}
+
+.maximale-relative-width-100{
+	max-width : 100% !important;
 }
 
 .maximale-relative-width-200{
@@ -44,8 +50,8 @@ Date de dernière modification : XX/11/19
 	min-width : 75% !important;
 }
 
-.maximale-relative-width-250{
-	max-width: 250% !important;
+.maximale-relative-width-120{
+	max-width: 120% !important;
 }
 
 .maximale-relative-width-75{
