@@ -50,12 +50,24 @@ Date de dernière modification : XX/11/19
 	min-width : 75% !important;
 }
 
-.maximale-relative-width-120{
-	max-width: 120% !important;
+.maximale-relative-width-150{
+	max-width: 150% !important;
 }
 
 .maximale-relative-width-75{
 	max-width: 75% !important;
+}
+
+.line-heigth-20{
+	line-height: 20px  !important;
+}
+
+.line-heigth-28{
+	line-height: 28px  !important;
+}
+
+.line-heigth-35{
+	line-height: 35px  !important;
 }
 
 .width-150{

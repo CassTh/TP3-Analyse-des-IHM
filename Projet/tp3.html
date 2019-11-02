@@ -30,74 +30,90 @@ Date de dernière modification : XX/11/19
 	</head>
 	
 	<body>
-		<div id="page" class="container page inline-block no-padding no-margin">
+		<div id="page" class="container-fluid page inline-block no-padding no-margin">
 			<div id="inputs" class="left half-page">
-				<div id="inputs-title-block" class="container no-padding no-margin ">
+				<div id="inputs-title-block" class="container-fluid no-padding no-margin ">
 					<div clas="row">
 						<div class="col font-weight-bold no-padding pl-2 ml-1 text-size-125">Inputs</div>
 						<!--<div id ="inputs-icons" class=""></div>-->
 					</div>
 				</div>
-				<div class="border rounded shadow-sm m-1 p-2 width-150">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-150">
 					<div class="font-weight-bold no-padding">Alpha</div>
-					<div id="inputs-alpha" class="container text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
+					<div id="inputs-alpha" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
 						<div class="row no-padding no-margin maximale-relative-width-100">
-							<div class="col-2 no-padding no-margin mr-1">&nbsp;</div>
 							<div class="col no-padding no-margin mr-1">
-								<div id="price-shift-alpha" class="container inline-block no-padding no-margin">
-									<div id="price-shift-alpha-title-line" class="row">										
+								<div id="price-shift-alpha" class="container-fluid inline-block no-padding no-margin">
+									<div id="price-shift-alpha-title-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
 										<div class="col no-padding text-center">Price Shift</div>
 									</div>
-									<div id="price-shift-alpha-label-line" class="row">
+									<div id="price-shift-alpha-label-line" class="row line-heigth-28 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
 										<div class="col no-padding">&nbsp;</div>								
 									</div>
-									<div id="price-shift-alpha-data-line" class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-120">
+									<div id="price-shift-alpha-data-line" class="row line-heigth-35 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col-2 font-weight-light text-size-90">XX%</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-2 no-padding no-margin mr-1">&nbsp;</div>
 							<div class="col no-padding no-margin mr-1">
-								<div id="unlimited-tariff-alpha" class="container inline-block">
-									<div id="price-shift-title-line" class="row">
+								<div id="unlimited-tariff-alpha" class="container-fluid inline-block">
+									<div id="unlimited-tariff-title-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right invisible">&nbsp;</div>
 										<div class="col no-padding text-center">Unlimited Data Tariff</div>
 									</div>
-									<div id="data-label-line" class="row text-size-90">
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">none</label>
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">5£</label>
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">10£</label>
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">15£</label>
+									<div id="unlimited-tariff-data-label-line" class="row text-size-90 line-heigth-28 ml-1">
+										<div class="col-2 text-right invisible">&nbsp;</div>
+										<div class="col">
+											<div class="row line-heigth-20 no-margin no-padding">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">none</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">5£</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">10£</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">15£</label>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div id="price-shift-alpha-data-line" class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+									<div id="unlimited-tariff-alpha-data-line" class="row line-heigth-35 ml-1">
+										<div class="col-2 text-right invisible">&nbsp;</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div id="high-data-tariff" class="row no-padding no-margin maximale-relative-width-100">
-							<div class="col-2 no-padding no-margin mr-1 no-padding">High Data Tariff</div>
+							<div class="col-3 no-padding no-margin mr-1 no-padding">High Data Tariff</div>
 							<div class="col no-margin no-padding"> 
 								<div class="row no-padding no-margin">
 									<div class="col-3 no-padding no-margin form-check-inline">
@@ -113,283 +129,285 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div> 
-				<div class="border rounded shadow-sm m-1 p-2 width-150">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-150">
 					<div class="col font-weight-bold no-padding">Others</div>
-					<div id="table-inputs" class="text-size-85">
-						<div id="price-shift-inputs" class="container inline-block no-padding no-margin">
-							<div id="price-shift-inputs-title-line" class="row">
-								<div class="col-2 no-padding">&nbsp;</div>
-								<div class="col-4 no-padding text-center">Price Shift</div>
-							</div>
-							<div id="price-shift-inputs-radio-button-line" class="row">
-								<div class="col-2 no-padding">&nbsp;</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col">&nbsp;</div>
-										<div class="col form-check-inline no-padding">
-												<input class="form-check-input" type="radio" value="all">
-												<label class="no-padding no-margin text-right font-weight-light font-italic">All</label>
-										</div>
-										<div class="col form-check-inline no-padding">
-												<input class="form-check-input" type="radio" value="custom">
-												<label class="no-padding no-margin text-right font-weight-light font-italic">Custom</label>
-										</div>
-										<div class="col">&nbsp;</div>
+					<div id="inputs-others" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
+						<div class="row no-padding no-margin maximale-relative-width-100">                   
+							<div class="col no-padding no-margin mr-1">
+								<div id="price-shift-others" class="container-fluid inline-block no-padding no-margin">
+									<div id="price-shift-others-title-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
+										<div class="col no-padding text-center">Price Shift</div>
 									</div>
-								</div>
-							</div>
-							<div id="price-shift-inputs-data-label-line" class="row">
-								<div class="col-2 no-padding">&nbsp;</div>
-								<div class="col-4 no-padding">&nbsp;</div>
-							</div>
-							<div id="price-shift-beta-data-line" class="row">
-								<div class="col-2 no-padding text-right">Beta</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
+									<div id="price-shift-inputs-radio-button-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col-2 form-check-inline no-padding">
+														<input class="form-check-input" type="radio" value="all">
+														<label class="no-padding no-margin text-right font-weight-light font-italic">All</label>
+												</div>
+												<div class="col-2 form-check-inline no-padding">
+														<input class="form-check-input" type="radio" value="custom">
+														<label class="no-padding no-margin text-right font-weight-light font-italic">Custom</label>
+												</div>
+											</div>
 										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
-									</div>	
-								</div>
-							</div>
-							<div id="price-shift-gamma-data-line" class="row">
-								<div class="col-2 no-padding text-right">Gamma</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
-										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
 									</div>
-								</div>
-							</div>
-							<div id="price-shift-delta-data-line" class="row">
-								<div class="col-2 no-padding text-right">Delta</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
-										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
+									<div id="price-shift-others-label-line" class="row line-heigth-28 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
+										<div class="col no-padding">&nbsp;</div>								
 									</div>
-								</div>
-							</div>
-							<div id="price-shift-epsilon-data-line" class="row">
-								<div class="col-2 no-padding text-right">Epsilon</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
+									<div id="price-shift-beta-data-line" class="row line-heigth-35 ml-1">
+										<div class="col-2 text-right">Beta</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
 									</div>
-								</div>
-							</div>
-							<div id="price-shift-iota-data-line" class="row">
-								<div class="col-2 no-padding text-right">Iota</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
+									<div id="price-shift-gamma-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right">Gamma</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
 									</div>
-								</div>
-							</div>
-							<div id="price-shift-theta-data-line" class="row">
-								<div class="col-2 no-padding text-right">Theta</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
+									<div id="price-shift-delta-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right">Delta</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
 									</div>
-								</div>
-							</div>
-							<div id="kappa-data-line" class="row">
-								<div class="col-2 no-padding text-right">Kappa</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col-8 no-margin">
-											<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-100">
+									<div id="price-shift-epsilon-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right">Epsilon</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col-2 pl-5 font-weight-light text-size-90">XX%</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div id="unlimited-tariff-inputs" class="container inline-block no-padding no-margin">
-							<div id="unlimited-tariff-inputs-title-line" class="row">
-								<div class="col-2 no-padding">&nbsp;</div>
-								<div class="col-4 no-padding text-center">Unlimited Data Tariff</div>
-							</div>
-							<div id="unlimited-tariff-inputs-radio-button-line" class="row">
-								<div class="col-2 no-padding">&nbsp;</div>
-								<div class="col-4 no-padding">
-									<div class="row">
-										<div class="col">&nbsp;</div>
-										<div class="col form-check-inline no-padding">
-												<input class="form-check-input" type="radio" value="all">
-												<label class="no-padding no-margin text-right font-weight-light font-italic">All</label>
+									<div id="price-shift-iota-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right">Iota</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col form-check-inline no-padding">
-												<input class="form-check-input" type="radio" value="custom">
-												<label class="no-padding no-margin text-right font-weight-light font-italic">Custom</label>
-										</div>
-										<div class="col">&nbsp;</div>
 									</div>
-								</div>
-							</div>
-							<div id="unlimited-tariff-inputs-data-label-line" class="row">
-								<div class="col-2 no-padding">&nbsp;</div>
-								<div class="col-4">
-									<div class="row text-size-90">
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">none</label>
+									<div id="price-shift-theta-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right">Theta</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">5£</label>
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">10£</label>
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <label class="mx-auto font-weight-light">15£</label>
+									</div>
+									<div id="price-shift-kappa-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right">Kappa</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8 no-margin">
+													<input type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div class="col-2 font-weight-light text-size-90">XX%</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div id="unlimited-tariff-beta-data-line" class="row">
-								<div class="col-2 no-padding text-right">Beta</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+							<div class="col no-padding no-margin mr-1">
+								<div id="unlimited-tariff-others" class="container-fluid inline-block">
+									<div id="unlimited-tariff-title-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right invisible">&nbsp;</div>
+										<div class="col no-padding text-center">Unlimited Data Tariff</div>
+									</div>
+									<div id="unlimited-tariff-inputs-radio-button-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right invisible">&nbsp;</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col-2 form-check-inline no-padding">
+														<input class="form-check-input" type="radio" value="all">
+														<label class="no-padding no-margin text-right font-weight-light font-italic">All</label>
+												</div>
+												<div class="col-2 form-check-inline no-padding">
+														<input class="form-check-input" type="radio" value="custom">
+														<label class="no-padding no-margin text-right font-weight-light font-italic">Custom</label>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div id="unlimited-tariff-gamma-data-line" class="row">
-								<div class="col-2 no-padding text-right">Gamma</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="unlimited-tariff-delta-data-line" class="row">
-								<div class="col-2 no-padding text-right">Delta</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+									<div id="unlimited-tariff-data-label-line" class="row text-size-90 line-heigth-28 ml-1">
+										<div class="col-2 text-right invisible">&nbsp;</div>
+										<div class="col">
+											<div class="row line-heigth-20 no-margin no-padding">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">none</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">5£</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">10£</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light">15£</label>
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div id="unlimited-tariff-epsilon-data-line" class="row">
-								<div class="col-2 no-padding text-right">Epsilon</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="unlimited-tariff-iota-data-line" class="row">
-								<div class="col-2 no-padding text-right">Iota</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+									<div id="unlimited-tariff-beta-data-line" class="row line-heigth-35 ml-1">
+										<div class="col-2 text-right invisible">Beta</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div id="unlimited-tariff-theta-data-line" class="row">
-								<div class="col-2 no-padding text-right">Theta</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
-										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+									<div id="unlimited-tariff-gamma-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right invisible">Gamma</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div id="kappa-data-line" class="row">
-								<div class="col-2 no-padding text-right">Kappa</div>
-								<div class="col-4">
-									<div class="row">
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
+									<div id="unlimited-tariff-delta-data-line" class="row  line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right invisible">Delta</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+									</div>
+									<div id="unlimited-tariff-epsilon-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right invisible">Epsilon</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="all">
+									</div>
+									<div id="unlimited-tariff-iota-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right invisible">Iota</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
-										<div class="col form-check-inline no-padding">
-											  <input class="mx-auto" type="radio" value="custom">
+									</div>
+									<div id="unlimited-tariff-theta-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right invisible">Theta</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="unlimited-tariff-kappa-data-line" class="row line-heigth-35 ml-1 border-top">
+										<div class="col-2 text-right invisible">Kappa</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <input class="mx-auto mt-2" type="radio" value="">
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -397,16 +415,16 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div>                                                                             
-				<div class="border rounded shadow-sm m-1 p-2 width-150">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-150">
 					<div class="col font-weight-bold no-padding">Filters</div>
 					<div id="table-filters" class="no-padding no-margin">
-						<div id="consumer-segment" class="container text-size-85">
-							<div class="container inline-block">
+						<div id="consumer-segment" class="container-fluid text-size-85">
+							<div class="container-fluid inline-block">
 								<div class="row">
 									<div class="col-2 no-padding text-right">Consumer segment</div>
 								</div>
 							</div>
-							<div class="container inline-block">
+							<div class="container-fluid inline-block">
 								<div class="row">
 									<div class="col-2 no-margin pl-4 form-check-inline">
 										<input class="form-check-input" type="radio" value="">
@@ -423,13 +441,13 @@ Date de dernière modification : XX/11/19
 								</div>
 							</div>
 						</div>
-						<div id="consumer-type" class="container text-size-85">
-							<div class="container inline-block">
+						<div id="consumer-type" class="container-fluid text-size-85">
+							<div class="container-fluid inline-block">
 								<div class="row">
 									<div class="col-2 no-padding text-right">Consumer type</div>
 								</div>
 							</div>
-							<div class="container inline-block">
+							<div class="container-fluid inline-block">
 								<div class="row">
 									<div class="col-4 no-margin pl-4 form-check-inline">
 										<input class="form-check-input" type="checkbox" value="">
