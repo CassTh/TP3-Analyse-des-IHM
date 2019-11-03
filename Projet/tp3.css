@@ -54,10 +54,6 @@ Date de dernière modification : XX/11/19
 	max-width: 150% !important;
 }
 
-.maximale-relative-width-75{
-	max-width: 75% !important;
-}
-
 .line-heigth-20{
 	line-height: 20px  !important;
 }
@@ -70,8 +66,8 @@ Date de dernière modification : XX/11/19
 	line-height: 35px  !important;
 }
 
-.width-150{
-	width : 165%;
+.width-120{
+	width : 120%;
 }
 
 /* Margin et padding*/
