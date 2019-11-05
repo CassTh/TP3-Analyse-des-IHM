@@ -54,10 +54,6 @@ Date de dernière modification : XX/11/19
 	line-height: 20px  !important;
 }
 
-.line-heigth-28{
-	line-height: 28px  !important;
-}
-
 .line-heigth-35{
 	line-height: 35px  !important;
 }
@@ -74,6 +70,11 @@ Date de dernière modification : XX/11/19
 
 .no-padding{
 	padding : 0px !important;
+}
+
+.margin-t-b-11{
+	margin-top : 11.1px !important;
+	margin-bottom : 11.1px !important;
 }
 
 /* Mise en forme du texte*/
@@ -95,4 +96,8 @@ Date de dernière modification : XX/11/19
 
 .text-size-85{
 	font-size : 85%;
+}
+
+.text-white{
+	color : white;
 }
