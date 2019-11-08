@@ -33,7 +33,7 @@ Date de dernière modification : XX/11/19
 		<div id="page" class="container-fluid page inline-block no-padding no-margin">
 			<div id="inputs" class="left half-page">
 				<div id="inputs-title-block" class="container-fluid no-padding no-margin ">
-					<div clas="row">
+					<div class="row">
 						<div class="col font-weight-bold no-padding pl-2 ml-1 text-size-125">Inputs</div>
 						<!--<div id ="inputs-icons" class=""></div>-->
 					</div>
@@ -130,29 +130,93 @@ Date de dernière modification : XX/11/19
 					</div>
 				</div> 
 				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
-					<div class="col font-weight-bold no-padding">Others</div>
+					<div class="font-weight-bold no-padding">Others</div>
+					<div class="no-padding ml-2 mr-1 line-heigth-15 border-top border-bottom border-light">
+						<div id="toggle-all" onclick="toogleMenuVisibility('all')" class="row no-padding no-margin justify-content-center">
+							<img id="toggle-all-icon" src="./icones/triangle-down.png" height="15"/>
+						</div>
+						<div id="toggle-details" onclick="toogleMenuVisibility('details')" class="row no-padding no-margin justify-content-center">
+							<img id="toggle-details-icon" src="./icones/triangle-up.png" height="15"/>
+						</div>
+					</div>
 					<div id="inputs-others" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
-						<div class="row no-padding no-margin maximale-relative-width-100">                   
-							<div id="price-shift-others" class="col no-padding no-margin mr-1">
+						<div id="all" class="row no-padding no-margin maximale-relative-width-100">
+							<div id="price-shift-all" class="col no-padding no-margin mr-1">
+								<div class="container-fluid inline-block no-padding no-margin">
+									<div id="price-shift-alpha-title-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
+										<div class="col no-padding text-center">Price Shift</div>
+									</div>
+									<div id="price-shift-alpha-label-line" class="row ml-1">
+										<div class="col-2 text-right">&nbsp;</div>
+										<div class="col no-padding">&nbsp;</div>								
+									</div>
+									<div id="price-shift-alpha-data-line" class="row line-heigth-35 ml-1">
+										<div class="col-2 text-right no-margin no-padding text-white">All</div>
+										<div class="col">
+											<div class="row">
+												<div class="col-8">
+													<input id="slider-all" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
+												</div>
+												<div id="slider-all-value" class="col-2 font-weight-light text-size-90 pl-5">XX%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="unlimited-tariff-all" class="col no-padding no-margin mr-1">
+								<div class="container-fluid inline-block no-padding no-margin">
+									<div id="unlimited-tariff-title-line" class="row line-heigth-20 ml-1">
+										<div class="col-2 no-margin no-padding text-right d-block d-md-none">&nbsp;</div>
+										<div class="col no-padding text-center">Unlimited Data Tariff</div>
+									</div>
+									<div id="unlimited-tariff-data-label-line" class="row text-size-90 ml-1">
+										<div class="col-2 no-margin no-padding text-right d-block d-md-none">&nbsp;</div>
+										<div class="col no-margin no-padding">
+											<div class="row line-heigth-20 no-margin no-padding">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light no-margin no-padding">none</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light no-margin no-padding">5£</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light no-margin no-padding">10£</label>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													  <label class="font-weight-light no-margin no-padding">15£</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="unlimited-tariff-alpha-data-line" class="row line-heigth-35 ml-1">
+										<div class="col-2 no-margin no-padding text-right d-block d-md-none text-white">All</div>
+										<div class="col">
+											<div class="row justify-content-center">
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													 <input id="radio-all-none"  class="mx-auto margin-t-b-11" type="radio" value="none">
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													 <input id="radio-all-5" class="mx-auto margin-t-b-11" type="radio" value="5" disabled>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													 <input id="radio-all-10" class="mx-auto margin-t-b-11" type="radio" value="10" disabled>
+												</div>
+												<div class="col form-check-inline no-margin no-padding justify-content-center">
+													 <input id="radio-all-15" class="mx-auto margin-t-b-11" type="radio" value="15" disabled>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="details" class="row no-padding no-margin maximale-relative-width-100">                   
+							<div id="price-shift-details" class="col no-padding no-margin mr-1">
 								<div class="container-fluid inline-block no-padding no-margin">
 									<div id="price-shift-others-title-line" class="row line-heigth-20 ml-1">
 										<div class="col-2 no-margin no-padding text-right">&nbsp;</div>
 										<div class="col no-padding text-center">Price Shift</div>
-									</div>
-									<div id="price-shift-inputs-radio-button-line" class="row line-heigth-20 ml-1">
-										<div class="col-2 no-margin no-padding text-right">&nbsp;</div>
-										<div class="col">
-											<div class="row justify-content-center">
-												<div class="col-2 form-check-inline no-padding">
-														<input class="form-check-input" type="radio" value="all">
-														<label class="no-padding no-margin text-right font-weight-light font-italic">All</label>
-												</div>
-												<div class="col-2 form-check-inline no-padding">
-														<input class="form-check-input" type="radio" value="custom">
-														<label class="no-padding no-margin text-right font-weight-light font-italic">Custom</label>
-												</div>
-											</div>
-										</div>
 									</div>
 									<div id="price-shift-others-label-line" class="row ml-1">
 										<div class="col-2 no-margin no-padding text-right">&nbsp;</div>
@@ -237,26 +301,11 @@ Date de dernière modification : XX/11/19
 									</div>
 								</div>
 							</div>
-							<div id="unlimited-tariff-others" class="col no-padding no-margin mr-1">
+							<div id="unlimited-tariff-details" class="col no-padding no-margin mr-1">
 								<div class="container-fluid inline-block no-padding no-margin">
 									<div id="unlimited-tariff-title-line" class="row line-heigth-20 ml-1">
 										<div class="col-2 no-margin no-padding text-right d-block d-sm-none">&nbsp;</div>
 										<div class="col no-padding text-center">Unlimited Data Tariff</div>
-									</div>
-									<div id="unlimited-tariff-inputs-radio-button-line" class="row line-heigth-20 ml-1">
-										<div class="col-2 no-margin no-padding text-right d-block d-sm-none">&nbsp;</div>
-										<div class="col">
-											<div class="row justify-content-center">
-												<div class="col-2 form-check-inline no-padding">
-														<input class="form-check-input" type="radio" value="all">
-														<label class="no-padding no-margin text-right font-weight-light font-italic">All</label>
-												</div>
-												<div class="col-2 form-check-inline no-padding">
-														<input class="form-check-input" type="radio" value="custom">
-														<label class="no-padding no-margin text-right font-weight-light font-italic">Custom</label>
-												</div>
-											</div>
-										</div>
 									</div>
 									<div id="unlimited-tariff-data-label-line" class="row text-size-90 ml-1">
 										<div class="col-2 no-margin no-padding text-right d-block d-sm-none">&nbsp;</div>
