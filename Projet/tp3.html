@@ -33,9 +33,18 @@ Date de dernière modification : XX/11/19
 		<div id="page" class="container-fluid page inline-block no-padding no-margin">
 			<div id="inputs" class="left half-page">
 				<div id="inputs-title-block" class="container-fluid no-padding no-margin ">
-					<div class="row">
-						<div class="col font-weight-bold no-padding pl-2 ml-1 text-size-125">Inputs</div>
-						<!--<div id ="inputs-icons" class=""></div>-->
+					<div class="row width-120 ml-1">
+						<div class="col font-weight-bold no-padding pl-1 ml-1 text-size-125">Inputs</div>
+						<div id ="inputs-icons" class="col no-padding no-margin">
+							<div class="row no-padding no-margin justify-content-end">
+								<div class="col-1 no-padding no-margin">
+									<img src="./icones/save.png" height="15"/>
+								</div>
+								<div class="col-1 no-padding no-margin">
+									<img src="./icones/reset.png" height="15"/>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
@@ -131,7 +140,7 @@ Date de dernière modification : XX/11/19
 				</div> 
 				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
 					<div class="font-weight-bold no-padding">Others</div>
-					<div class="no-padding ml-2 mr-1 line-heigth-15 border-top border-bottom border-light">
+					<div id="toggle-menu" class="no-padding ml-2 mr-1 line-heigth-15 border-top border-bottom border-light">
 						<div id="toggle-all" onclick="toogleMenuVisibility('all')" class="row no-padding no-margin justify-content-center">
 							<img id="toggle-all-icon" src="./icones/triangle-down.png" height="15"/>
 						</div>
