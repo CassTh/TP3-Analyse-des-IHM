@@ -1,8 +1,105 @@
-body, html {
-    padding: 0;
-    margin: 10px;
-    height: 100%;
-    width: 100%;
+/*Fichier CSS de l'application du Lab 2
+Mise en forme du site web
+Auteurs : 	
+			XXXX Ana -  
+			AYOTTE-VELTMAN Jasper - 1907425
+			WITTY Julien - 1949837
+			THOLOT Cassandre - 2035978
+Date de création : 30/10/19
+Date de dernière modification : XX/11/19
+*/
+
+
+.inline{
+	display : inline;
+}
+
+.inline-block{
+	display : inline-block;	
+  box-sizing: border-box;
+	
+}
+
+/* Dimensions */
+.page{
+	width : 100%;
+}
+
+.half-page{
+	max-width : 49%;
+}
+
+.maximale-relative-width-100{
+	max-width : 100% !important;
+}
+
+.maximale-relative-width-200{
+	max-width : 200% !important;
+	min-width : 75% !important;
+}
+
+.maximale-relative-width-150{
+	max-width: 150% !important;
+}
+
+.line-heigth-20{
+	line-height: 20px  !important;
+}
+
+.line-heigth-35{
+	line-height: 35px  !important;
+}
+
+.line-heigth-15{
+	line-height: 15px  !important;
+}
+
+.height-15{
+	height : 15px !important;
+}
+
+.width-120{
+	width : 120%;
+}
+
+/* Margin et padding*/
+
+.no-margin{
+	margin : 0px !important;
+}
+
+.no-padding{
+	padding : 0px !important;
+}
+
+.margin-t-b-11{
+	margin-top : 11.1px !important;
+	margin-bottom : 11.1px !important;
+}
+
+/* Mise en forme du texte*/
+.text-center{
+	text-align : center;
+}
+
+.text-right{
+	text-align : right;
+}
+
+.text-size-125{
+	font-size : 125%;
+}
+
+.text-size-90{
+	font-size : 90%;
+}
+
+.text-size-85{
+	font-size : 85%;
+}
+
+.text-white{
+	color : white;
 }
 
 
@@ -21,7 +118,7 @@ body, html {
   cursor: pointer;
 }
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
   .box {
     width: 100%; 
   }  
@@ -98,10 +195,11 @@ body, html {
   .left {
     left: 0;
     background-color: white;
+    max-width: 48%;
   }
   
   .right {
     right: 0;
+    max-width: 48%;
   }
   
- 
