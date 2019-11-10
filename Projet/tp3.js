@@ -7,8 +7,7 @@ function fullscreen(element) {
     for (i = 0; i < boxes.length; i++) {
         var otherElements = document.getElementById(boxes[i]);
         otherElements.classList.toggle("hide");
-    }
- 
+    } 
 }
 
 function openTab(evt, tab) {

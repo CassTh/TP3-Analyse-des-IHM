@@ -1,29 +1,33 @@
 <link rel="stylesheet" href="tp3.css">
 <script src="tp3.js"></script>
 <body>
+<div class = "split left">
+</div>
+<div class = "split right">
+	<div class="tab">
+		<button  id="defaultTab" class="tablinks" onclick="openTab(event, 'Outputs')">Outputs</button>
+		<button class="tablinks" onclick="openTab(event, 'Choices')">Choices</button>
+	</div>
+	<div id = "Outputs" class="tabcontent">
+		<div id = "box1" class="box" onclick = "fullscreen(this)">
+			<img src="/panda.png">
+		</div>
+		<div id = "box2" class="box" onclick = "fullscreen(this)">
+			<img src="/hippo.png"> 
+		</div>
+		<div id = "box3" class="box" onclick = "fullscreen(this)">
+			<img src="/polybee.png"> 
+		</div>
+		<div id = "box4" class="box" onclick = "fullscreen(this)">
+			<img src="/bull.png">
+		</div>
+	</div>
+	<div id = "Choices" class="tabcontent">
+		<div id = "choices" class = "box big">
+			<img src= "/turtle.png">
+		</div>
 
-<div class="tab">
-	<button class="tablinks" onclick="openTab(event, 'Outputs')" id="defaultTab">Outputs</button>
-	<button class="tablinks" onclick="openTab(event, 'Choices')">Choices</button>
-</div>
-<div id = "Outputs" class="tabcontent">
-	<div id = "box1" class="box" onclick = "fullscreen(this)">
-		<img src="/panda.png">
-	</div>
-	<div id = "box2" class="box" onclick = "fullscreen(this)">
-		<img src="/hippo.png"> 
-	</div>
-	<div id = "box3" class="box" onclick = "fullscreen(this)">
-		<img src="/polybee.png"> 
-	</div>
-	<div id = "box4" class="box" onclick = "fullscreen(this)">
-		<img src="/bull.png">
 	</div>
 </div>
-<div id = "Choices" class="tabcontent">
-	<div id = "choices" class = "box big">
-		<img src= "/turtle.png">
-	</div>
 
-</div>
 </body>
