@@ -22,11 +22,7 @@ Date de dernière modification : XX/11/19
 
 /* Dimensions */
 .page{
-	width : 100%;
-}
-
-.half-page{
-	max-width : 49%;
+  width : 100%;
 }
 
 .maximale-relative-width-100{
@@ -83,6 +79,9 @@ Date de dernière modification : XX/11/19
 	margin-bottom : 11.1px !important;
 }
 
+.text {
+  font-family: 'Segoe UI', sans-serif;
+}
 /* Mise en forme du texte*/
 .text-center{
 	text-align : center;
@@ -93,21 +92,49 @@ Date de dernière modification : XX/11/19
 }
 
 .text-size-125{
-	font-size : 125%;
+  font-size : 125%;
 }
 
 .text-size-90{
-	font-size : 90%;
+  font-size : 90%;
 }
 
 .text-size-85{
-	font-size : 85%;
+  font-size : 85%;
 }
 
 .text-white{
-	color : white;
+  color : white;
 }
 
+.left-text {
+  float:left;
+  width:50%
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  bottom: 19px;
+}
+
+.box-title {
+  text-decoration: underline;
+  border: 15px;
+}
+
+.block-box {
+  margin: 10px;
+}
+
+.toggle-menu {
+  cursor: pointer;
+  width: 20px
+}
 
 .box {
   box-sizing: border-box;
@@ -141,10 +168,11 @@ Date de dernière modification : XX/11/19
 }
 
 .box.hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 .box img {
-    max-width:100%;
+  max-width:100%;
+  filter: invert(100%);
 }
 
 .overlay {  
@@ -156,9 +184,27 @@ Date de dernière modification : XX/11/19
   z-index:1000;
 }
 
+.inputs {
+  position: relative;
+  top:12px;
+  left: 10px;
+  font-size: x-large;
+}
+
+.input-tab {
+  height: 60px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #f1f1f1;
+  position: relative;
+  right: 5px;
+}
 .tab {
+  margin: 10px;
   overflow: hidden;
   border: 1px solid #ccc;
+  border-radius: 2px;
   background-color: #f1f1f1;
 }
 
@@ -203,12 +249,14 @@ Date de dernière modification : XX/11/19
 }
 
 .left {
+  filter: invert(100%);
   left: 0;
   background-color: white;
-  max-width: 48%;
+  font-family: 'Arial';
 }
 
 .right {
+  filter: invert(100%);
   right: 0;
-  max-width: 48%;
+  background-color: white;
 }
