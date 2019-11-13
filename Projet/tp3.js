@@ -40,10 +40,12 @@ function toogleMenuVisibility(toHide) {
     }
 }
 
-
+window.onload=function(){
 var valueAlphaSlider=document.getElementById("slideralpha");
 var outputAlpha=document.getElementById("outputAlpha");
     valueAlphaSlider.oninput=function(){
         outputAlpha.innerHTML=this.value;
+        outputAlpha.innerHTML+='%';
      
     }
+};
