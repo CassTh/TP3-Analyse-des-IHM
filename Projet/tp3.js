@@ -10,6 +10,7 @@ Date de dernière modification : XX/11/19
 */
 
 /*Initialisation de la page*/
+
 $(document).ready(function(){
     //Affichage par défaut sur la page
     $('#toggle-details-icon').hide();
@@ -38,3 +39,11 @@ function toogleMenuVisibility(toHide) {
         $('#all').show();
     }
 }
+
+
+var valueAlphaSlider=document.getElementById("slideralpha");
+var outputAlpha=document.getElementById("outputAlpha");
+    valueAlphaSlider.oninput=function(){
+        outputAlpha.innerHTML=this.value;
+     
+    }
