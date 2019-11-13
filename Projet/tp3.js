@@ -43,9 +43,22 @@ function toogleMenuVisibility(toHide) {
 window.onload=function(){
 var valueAlphaSlider=document.getElementById("slideralpha");
 var outputAlpha=document.getElementById("outputAlpha");
+var valueAllSlider=document.getElementById("sliderAll");
+var outputAll=document.getElementById("outputAll");
+
+
+
+
     valueAlphaSlider.oninput=function(){
         outputAlpha.innerHTML=this.value;
         outputAlpha.innerHTML+='%';
      
     }
+
+    valueAllSlider.oninput=function(){
+        outputAll.innerHTML=this.value;
+        outputAll.innerHTML+='%';
+     
+    }
+
 };
