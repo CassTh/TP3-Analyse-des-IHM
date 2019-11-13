@@ -4,7 +4,7 @@
 Mise en forme du site web
 Auteurs : 	
 			XXXX Ana -  
-			XXXX Jasper -
+			AYOTTE-VELTMAN Jasper - 1907425
 			WITTY Julien - 1949837
 			THOLOT Cassandre - 2035978
 Date de création : 30/10/19

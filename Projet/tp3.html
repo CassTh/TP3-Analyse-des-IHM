@@ -3,7 +3,7 @@
 Déclaration de la structure du site web
 Auteurs : 	
 			XXXX Ana -  
-			XXXX Jasper -
+			AYOTTE-VELTMAN Jasper - 1907425
 			WITTY Julien - 1949837
 			THOLOT Cassandre - 2035978
 Date de création : 30/10/19
@@ -32,9 +32,9 @@ Date de dernière modification : XX/11/19
 	
 	<body>
 		<div id="page" class="container-fluid page inline-block no-padding no-margin ">
-			<div id="inputs" class="half-page split left">
-				<div id="inputs-title-block" class="container-fluid no-padding no-margin ">
-					<div class="row width-120 ml-1">
+			<div id="inputs" class="split left">
+				<div id="inputs-title-block" class="container-fluid no-padding no-margin inputs-height">
+					<div class="row width-110 ml-1">
 						<div class="col font-weight-bold no-padding pl-1 ml-1 text-size-125">Inputs</div>
 						<div id ="inputs-icons" class="col no-padding no-margin">
 							<div class="row no-padding no-margin justify-content-end">
@@ -48,7 +48,7 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div>
-				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-110">
 					<div class="font-weight-bold no-padding">Alpha</div>
 					<div id="inputs-alpha" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
 						<div class="row no-padding no-margin maximale-relative-width-100">
@@ -139,7 +139,7 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div> 
-				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-110">
 					<div class="font-weight-bold no-padding">Others</div>
 					<div id="toggle-menu" class="no-padding ml-2 mr-1 line-heigth-15 border-top border-bottom border-light">
 						<div id="toggle-all" onclick="toogleMenuVisibility('all')" class="row no-padding no-margin justify-content-center">
@@ -474,7 +474,7 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div>                                                                             
-				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-110">
 					<div class="font-weight-bold no-padding">Filters</div>
 					<div id="table-filters" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
 						<div id="consumer-segment" class="row no-padding no-margin maximale-relative-width-100 mb-2">
@@ -546,10 +546,10 @@ Date de dernière modification : XX/11/19
 			</div>
 			<div class = "split right">
 				<div class="tab">
-					<button  id="defaultTab" class="tablinks" onclick="openTab(event, 'Outputs')">Outputs</button>
-					<button class="tablinks" onclick="openTab(event, 'Choices')">Choices</button>
+					<button  id="defaultTab" class="tablinks font-weight-bold text-size-125" onclick="openTab(event, 'Outputs')">Outputs</button>
+					<button class="tablinks font-weight-bold text-size-125" onclick="openTab(event, 'Choices')">Choices</button>
 				</div>
-				<div id = "Outputs" class="tabcontent">
+				<div id = "Outputs" class="tabcontent border rounded shadow-sm">
 					<div id = "box1" class="box" onclick = "fullscreen(this)">
 						<img src="/panda.png">
 					</div>
@@ -564,7 +564,7 @@ Date de dernière modification : XX/11/19
 					</div>
 				</div>
 				<div id = "Choices" class="tabcontent">
-					<div class = "box big">
+					<div class = "box choices">
 						<img src= "/turtle.png">
 					</div>
 				</div>
