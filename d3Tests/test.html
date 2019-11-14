@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>SANKEY Experiment</title>
+<style>
+  .node text {
+    font-family: 'Segoe UI', sans-serif;
+    fill: rgb(66, 66, 66);
+  }
+
+  .link {
+    stroke-opacity: .5;
+    transition: stroke-opacity .1s;
+  }
+
+  .link:hover {
+    stroke-opacity: 1;
+  }
+
+  .alpha {
+    fill: rgb(212, 61, 61);
+    stroke: rgb(212, 61, 61);
+  }
+
+  .beta {
+    stroke: rgb(255, 152, 56);
+    fill: rgb(255, 152, 56);
+  }
+
+  .gamma {
+    stroke: hsl(47, 100%, 62%);
+    fill: hsl(47, 100%, 62%);
+  }
+
+  .epsilon {
+    stroke: rgb(130, 221, 217);
+    fill: rgb(130, 221, 217);
+  }
+
+  .mobile {
+    stroke: rgb(83, 83, 182);
+    fill: rgb(83, 83, 182);
+  }
+
+  .iota {
+    stroke: rgb(192, 84, 192);
+    fill: rgb(192, 84, 192);
+  }
+
+  .theta {
+    stroke: rgb(255, 113, 172);
+    fill: rgb(255, 113, 172);
+  }
+
+  .kappa {
+    stroke: rgb(78, 78, 78);
+    fill: rgb(78, 78, 78);
+  }
+</style>
+
+<body>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script>
+  <script>
+    let margin = {
+      top: 10,
+      right: 10,
+      bottom: 10,
+      left: 10
+    };
+    let width = 700 - margin.left - margin.right;
+    let height = 300 - margin.top - margin.bottom;
+
+    function format(d) {
+      let unit = (d < 2) ? "customer" : "customers";
+      return d + " " + unit;
+    }
+
+    // append the svg object to the body of the page
+    const svg = d3.select("body").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
+
+    // Set the sankey diagram properties
+    let sankey = d3.sankey()
+      .nodeWidth(20)
+      .nodePadding(10)
+      .size([width, height]);
+
+    // load the data
+
+    const graph = {
+      "nodes": [{
+          "node": 0,
+          "name": "Alpha"
+        },
+        {
+          "node": 1,
+          "name": "Beta"
+        },
+        {
+          "node": 2,
+          "name": "Gamma"
+        },
+        {
+          "node": 3,
+          "name": "Iota"
+        },
+        {
+          "node": 4,
+          "name": "Alpha"
+        },
+        {
+          "node": 5,
+          "name": "Beta"
+        },
+        {
+          "node": 6,
+          "name": "Gamma"
+        },
+        {
+          "node": 7,
+          "name": "Iota"
+        }
+
+      ],
+      "links": [{
+          "source": 0,
+          "target": 4,
+          "value": 2
+        },
+        {
+          "source": 0,
+          "target": 5,
+          "value": 2
+        },
+        {
+          "source": 0,
+          "target": 6,
+          "value": 2
+        },
+        {
+          "source": 0,
+          "target": 7,
+          "value": 2
+        },
+        {
+          "source": 1,
+          "target": 7,
+          "value": 1
+        },
+        {
+          "source": 2,
+          "target": 4,
+          "value": 11
+        },
+        {
+          "source": 2,
+          "target": 7,
+          "value": 5
+        },
+        {
+          "source": 3,
+          "target": 6,
+          "value": 4
+        }
+      ]
+    }
+
+    // Filter the nodes tq ils apparaissent dans les links
+    sankey
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .layout(1);
+
+    // add in the links
+    let link = svg.append("g").selectAll(".link")
+      .data(graph.links)
+      .enter()
+      .append("path")
+      .attr("class", d => {
+        return "link " + d.source.name.toLowerCase();
+      })
+      .attr("d", sankey.link())
+      .style("stroke-width", function (d) {
+        return Math.max(1, d.dy);
+      })
+      .style("fill", "none");
+
+    // add the link titles
+    link.append("title")
+      .text(function (d) {
+        return d.source.name + " → " + d.target.name + "\n" + format(d.value);
+      });
+
+    // add in the nodes
+    let node = svg.append("g").selectAll(".node")
+      .data(graph.nodes)
+      .enter()
+      .append("g")
+      .attr("class", "node")
+      .attr("transform", function (d) {
+        return "translate(" + d.x + "," + d.y + ")";
+      });
+
+    // add the rectangles for the nodes
+    node.append("rect")
+      .attr("height", function (d) {
+        return d.dy;
+      })
+      .attr("width", sankey.nodeWidth() - 10)
+      .attr("transform", "translate(5,0)")
+      .attr("class", d => {
+        return d.name.toLowerCase();
+      })
+      .style("stroke", "none")
+      .append("title")
+      .text(function (d) {
+        return d.name + "\n" + format(d.value);
+      })
+
+
+    // add in the title for the nodes
+    node.append("text")
+      .attr("x", -6)
+      .attr("y", function (d) {
+        return d.dy / 2;
+      })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "end")
+      .text(function (d) {
+        return d.name;
+      })
+      .filter(function (d) {
+        return d.x < width / 2;
+      })
+      .attr("x", 6 + sankey.nodeWidth())
+      .attr("text-anchor", "start");
+  </script>
+
+</body>
