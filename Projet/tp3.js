@@ -45,9 +45,20 @@ var valueAlphaSlider=document.getElementById("slideralpha");
 var outputAlpha=document.getElementById("outputAlpha");
 var valueAllSlider=document.getElementById("sliderAll");
 var outputAll=document.getElementById("outputAll");
-
-
-
+var valueBetaSlider=document.getElementById("sliderBeta");
+var outputBeta=document.getElementById("outputbeta");
+var valueGammaSlider=document.getElementById("sliderGamma");
+var outputGamma=document.getElementById("outputgamma");
+var valueDeltaSlider=document.getElementById("sliderDelta");
+var outputDelta=document.getElementById("outputdelta");
+var valueEpsilonSlider=document.getElementById("sliderEpsilon");
+var outputEpsilon=document.getElementById("outputepsilon");
+var valueIotaSlider=document.getElementById("sliderIota");
+var outputIota=document.getElementById("outputiota");
+var valueThetaSlider=document.getElementById("sliderTheta");
+var outputTheta=document.getElementById("outputtheta");
+var valueKappaSlider=document.getElementById("sliderKappa");
+var outputKappa=document.getElementById("outputkappa");
 
     valueAlphaSlider.oninput=function(){
         outputAlpha.innerHTML=this.value;
@@ -60,5 +71,44 @@ var outputAll=document.getElementById("outputAll");
         outputAll.innerHTML+='%';
      
     }
+    valueBetaSlider.oninput=function(){
+        outputBeta.innerHTML=this.value;
+        outputBeta.innerHTML+='%';
+     
+    }
+
+    valueGammaSlider.oninput=function(){
+        outputGamma.innerHTML=this.value;
+        outputGamma.innerHTML+='%';
+     
+    }
+    valueDeltaSlider.oninput=function(){
+        outputDelta.innerHTML=this.value;
+        outputDelta.innerHTML+='%';
+     
+    }
+    valueEpsilonSlider.oninput=function(){
+        outputEpsilon.innerHTML=this.value;
+        outputEpsilon.innerHTML+='%';
+     
+    }
+    valueIotaSlider.oninput=function(){
+        outputIota.innerHTML=this.value;
+        outputIota.innerHTML+='%';
+     
+    }
+   valueThetaSlider.oninput=function(){
+        outputTheta.innerHTML=this.value;
+        outputTheta.innerHTML+='%';
+     
+    }
+
+    valueKappaSlider.oninput=function(){
+        outputKappa.innerHTML=this.value;
+        outputKappa.innerHTML+='%';
+     
+    }
+
+
 
 };
