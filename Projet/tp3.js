@@ -12,6 +12,7 @@ Date de dernière modification : XX/11/19
 */
 
 /*Initialisation de la page*/
+
 	$(document).ready(function(){
 		//Affichage par défaut sur la page
 		$('#toggle-details-icon').hide();
@@ -76,6 +77,10 @@ Retour : 		void
 			$('#all').show();
 		}
   }
+
+
+
+
   window.onload=function(){
     var valueAlphaSlider=document.getElementById("slideralpha");
     var outputAlpha=document.getElementById("outputAlpha");
