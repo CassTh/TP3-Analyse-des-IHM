@@ -75,3 +75,57 @@ input:checked + .pill::before {
 input[type="radio"]:checked + label{
     font-weight:bolder;
 }
+
+.node text {
+    font-family: 'Segoe UI', sans-serif;
+    fill: rgb(66, 66, 66);
+  }
+
+  .link {
+    stroke-opacity: .5;
+    transition: stroke-opacity .1s;
+  }
+
+  .link:hover {
+    stroke-opacity: 1;
+  }
+
+  .alpha {
+    fill: rgb(212, 61, 61);
+    stroke: rgb(212, 61, 61);
+  }
+
+  .beta {
+    stroke: rgb(255, 152, 56);
+    fill: rgb(255, 152, 56);
+  }
+
+  .gamma {
+    stroke: hsl(47, 100%, 62%);
+    fill: hsl(47, 100%, 62%);
+  }
+
+  .epsilon {
+    stroke: rgb(130, 221, 217);
+    fill: rgb(130, 221, 217);
+  }
+
+  .mobile {
+    stroke: rgb(83, 83, 182);
+    fill: rgb(83, 83, 182);
+  }
+
+  .iota {
+    stroke: rgb(192, 84, 192);
+    fill: rgb(192, 84, 192);
+  }
+
+  .theta {
+    stroke: rgb(255, 113, 172);
+    fill: rgb(255, 113, 172);
+  }
+
+  .kappa {
+    stroke: rgb(78, 78, 78);
+    fill: rgb(78, 78, 78);
+  }

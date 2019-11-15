@@ -1,6 +1,10 @@
 function lineChart(svg, data) {
     chart = setUpLineChart(svg);
     showLineChart(data, chart);
+
+    let n = Math.floor(chart.width / 100);
+    let x = rangeList(data["xAxis"]["xMin"], data["xAxis"]["xMax"], n);
+    addLineChartCaption(x, data["xAxis"]["xUnit"], chart)
 }
 
 function setUpLineChart(svg) {
@@ -32,14 +36,9 @@ function setUpLineChart(svg) {
 }
 
 function showLineChart(data, chart) {
-    const yUnit = "£";
     
     addLine(data["baseline"], "baseline", chart);
     addLine(data["shift"].reverse(), "shift", chart);
-    
-    let n = Math.floor(chart.width / 100);
-    let x = rangeList(data["xAxis"]["xMin"], data["xAxis"]["xMax"], n);
-    addLineChartCaption(x, data["xAxis"]["xUnit"], chart)
 }
 
 function rangeList(start, end, size) {

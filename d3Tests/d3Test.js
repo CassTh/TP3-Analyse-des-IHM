@@ -1,5 +1,5 @@
-// DATA
-const vc_data = [{
+// DATA CAN BE CHANGED
+let vc_data = [{
     "type": "ACLV",
     "baseline": 123,
     "shift": -80
@@ -26,7 +26,7 @@ const vc_data = [{
 },
 ];
 
-const ce_data = [ // Whatever for "baseline" and "shift"
+let ce_data = [ // Whatever for "baseline" and "shift"
     {"month": "January", "baseline": 23, "shift": 123},
     {"month": "February", "baseline": 23, "shift": 123},
     {"month": "March", "baseline": 23, "shift": 123},
@@ -41,7 +41,7 @@ const ce_data = [ // Whatever for "baseline" and "shift"
     {"month": "December", "baseline": 23, "shift": 123}
 ];
 
-const pe_data = {
+let pe_data = {
     "xAxis": {
         "xMin": -12,
         "xMax": 50,
@@ -75,7 +75,7 @@ const pe_data = {
     ]
 }
 
-const re_data = [
+let re_data = [
     {
         "xAxis": {
             "xMin":-12,
@@ -144,37 +144,129 @@ const re_data = [
     },
 ]
 
-const c_data = {
-    "nodes": [ // As is
-        {"node": 0, "name": "Alpha"},
-        {"node": 1, "name": "Beta"},
-        {"node": 2, "name": "Gamma"},
-        {"node": 3, "name": "Iota"},
-        {"node": 4, "name": "Epsilon"},
-        {"node": 5, "name": "Mobile"},
-        {"node": 6, "name": "Theta"},
-        {"node": 7, "name": "Kappa"}
-    ],
-    "links": [ // source and target in [0,7], whatever for values, length = idk, idc
-        {"source": 0, "target": 2, "value":12},
-        {"source": 1, "target": 2, "value":12},
-        {"source": 3, "target": 1, "value":12},
-        {"source": 1, "target": 1, "value":12},
+let c_data = {
+    "nodes": [{
+        "node": 0,
+        "name": "Alpha"
+      },
+      {
+        "node": 1,
+        "name": "Beta"
+      },
+      {
+        "node": 2,
+        "name": "Gamma"
+      },
+      {
+        "node": 3,
+        "name": "Iota"
+      },
+      {
+        "node": 4,
+        "name": "Alpha"
+      },
+      {
+        "node": 5,
+        "name": "Beta"
+      },
+      {
+        "node": 6,
+        "name": "Gamma"
+      },
+      {
+        "node": 7,
+        "name": "Iota"
+      }
 
+    ],
+    "links": [{
+        "source": 0,
+        "target": 4,
+        "value": 2
+      },
+      {
+        "source": 0,
+        "target": 5,
+        "value": 2
+      },
+      {
+        "source": 0,
+        "target": 6,
+        "value": 2
+      },
+      {
+        "source": 0,
+        "target": 7,
+        "value": 2
+      },
+      {
+        "source": 1,
+        "target": 7,
+        "value": 1
+      },
+      {
+        "source": 2,
+        "target": 4,
+        "value": 11
+      },
+      {
+        "source": 2,
+        "target": 7,
+        "value": 5
+      },
+      {
+        "source": 3,
+        "target": 6,
+        "value": 4
+      }
     ]
-}
+  }
 
 // CHARTS
+// This is for demonstration purposes
 let vc_svg = d3.select('#vc_graph').attr("height", 300).attr("width", 600);
 let pe_svg = d3.select('#pe_graph').attr("height", 300).attr("width", 600);
 let ce_svg = d3.select('#ce_graph').attr("height", 300).attr("width", 600);
 let re_svg = d3.select('#re_graph').attr("height", 300).attr("width", 600);
 let c_svg = d3.select('#c_graph').attr("height", 300).attr("width", 600);
 
-// SHOW CHARTS
+// Should use that for the merged version
+/*
+const vc_svg = d3.select('#vc_graph')
+const pe_svg = d3.select('#pe_graph')
+const ce_svg = d3.select('#ce_graph')
+const re_svg = d3.select('#re_graph')
+const c_svg = d3.select('#c_graph')
+*/
+
+// Init charts
 stackedBarChart(vc_data, "type", vc_svg);
 stackedBarChart(ce_data, "month", ce_svg);
 lineChart(pe_svg, pe_data);
 lineChart(re_svg, re_data[0]);
-//sankeyChart(c_data, c_svg);
+sankeyChart(c_data, c_svg);
 
+function vc_update() {
+    vc_svg.selectAll("*").remove();
+    stackedBarChart(vc_data, "type", vc_svg);
+}
+
+function pe_update() {
+    pe_svg.selectAll("*").remove();
+    lineChart(pe_svg, pe_data);
+}
+
+function ce_update() {
+    ce_svg.selectAll("*").remove();
+    stackedBarChart(ce_data, "month", ce_svg);
+}
+
+function re_update() {
+    re_svg.selectAll("*").remove();
+    lineChart(re_svg, re_data[0]);
+}
+
+function c_update() {
+    c_svg.selectAll("*").remove();
+    sankeyChart(c_data, c_svg);
+}
