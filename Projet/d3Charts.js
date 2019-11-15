@@ -270,3 +270,31 @@ function c_update() {
     c_svg.selectAll("*").remove();
     sankeyChart(c_data, c_svg);
 }
+function updateCharts(){
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  var sliderValue=Number(slider.value);
+  for(index in vc_data){
+      vc_data[index].shift = Number(slider.value);
+  }
+  stackedBarChart(vc_data, "type", vc_svg);
+  for(index in ce_data){
+      if(sliderValue<0){
+          ce_data[index].shift*=sliderValue/100;
+      } else {
+          ce_data[index].shift*=sliderValue/100+1;
+      }
+      }
+  stackedBarChart(ce_data, "month", ce_svg);
+  
+  for(index in pe_data){
+          pe_data[index].shift=Math.asin(pe_data[index].shift);
+          pe_data[index].shift=Math.sin(pe_data[index].shift*sliderValue/10);
+      
+  }
+  lineChart(pe_svg, pe_data);
+  slider.oninput = function() {
+  output.innerHTML = this.value;
+  }
+
+}
