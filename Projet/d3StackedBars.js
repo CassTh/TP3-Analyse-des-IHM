@@ -107,6 +107,7 @@ function addBarChartCaption(data, chart, barWidth, captionName) {
 
 function stackedBarChart(data, captionType, svg) {
     chart = setUpBarChart(svg);
+    console.log(chart);
     showStackedBarChart(data, chart, captionType);
 }
 

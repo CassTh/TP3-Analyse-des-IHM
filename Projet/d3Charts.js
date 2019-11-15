@@ -224,19 +224,19 @@ let c_data = {
 
 // CHARTS
 // This is for demonstration purposes
-// let vc_svg = d3.select('#vc_graph').attr("height", 300).attr("width", 600);
-// let pe_svg = d3.select('#pe_graph').attr("height", 300).attr("width", 600);
-// let ce_svg = d3.select('#ce_graph').attr("height", 300).attr("width", 600);
-// let re_svg = d3.select('#re_graph').attr("height", 300).attr("width", 600);
-// let c_svg = d3.select('#c_graph').attr("height", 300).attr("width", 600);
+let vc_svg = d3.select('#vc_graph').attr("height", 150).attr("width", 300);
+let pe_svg = d3.select('#pe_graph').attr("height", 150).attr("width", 300);
+let ce_svg = d3.select('#ce_graph').attr("height", 150).attr("width", 300);
+let re_svg = d3.select('#re_graph').attr("height", 150).attr("width", 300);
+let c_svg = d3.select('#c_graph').attr("height", 150).attr("width", 300);
 
 // Should use that for the merged version
-
+/* 
 const vc_svg = d3.select('#vc_graph')
 const pe_svg = d3.select('#pe_graph')
 const ce_svg = d3.select('#ce_graph')
 const re_svg = d3.select('#re_graph')
-const c_svg = d3.select('#c_graph')
+const c_svg = d3.select('#c_graph') */
 
 
 // Init charts

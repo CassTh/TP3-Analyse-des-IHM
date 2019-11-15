@@ -307,7 +307,7 @@ li {
     display: inline;
 }
 
-.pill {
+/* .pill {
     background:lightgrey;
     padding: 6px 20px;
     border-radius: 18px;
@@ -336,7 +336,7 @@ input:checked + .pill::before {
 
 input[type="radio"]:checked + label{
     font-weight:bolder;
-}
+} */
 
 .node text {
     font-family: 'Segoe UI', sans-serif;
