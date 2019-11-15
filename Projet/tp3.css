@@ -1,0 +1,262 @@
+/*Fichier CSS de l'application du Lab 2
+Mise en forme du site web
+Auteurs : 	
+			XXXX Ana -  
+			AYOTTE-VELTMAN Jasper - 1907425
+			WITTY Julien - 1949837
+			THOLOT Cassandre - 2035978
+Date de création : 30/10/19
+Date de dernière modification : XX/11/19
+*/
+
+
+.inline{
+	display : inline;
+}
+
+.inline-block{
+	display : inline-block;	
+  box-sizing: border-box;
+	
+}
+
+/* Dimensions */
+.page{
+  width : 100%;
+}
+.half-page{
+	max-width : 75%;
+} /**/
+
+.maximale-relative-width-100{
+	max-width : 100% !important;
+}
+
+.maximale-relative-width-200{
+	max-width : 110% !important;
+	min-width : 75% !important;
+}
+
+.maximale-relative-width-150{
+	max-width: 110% !important;
+}
+
+.line-heigth-20{
+	line-height: 20px  !important;
+}
+
+.line-heigth-35{
+	line-height: 35px  !important;
+}
+
+.line-heigth-15{
+	line-height: 15px  !important;
+}
+
+.height-15{
+	height : 15px !important;
+}
+
+.width-110{
+	width : 99%;
+}
+
+.inputs-height{
+  height: 60px;
+  position: relative;
+  top: 25px;
+}
+
+/* Margin et padding*/
+
+.no-margin{
+	margin : 0px !important;
+}
+
+.no-padding{
+	padding : 0px !important;
+}
+
+.margin-t-b-11{
+	margin-top : 11.1px !important;
+	margin-bottom : 11.1px !important;
+}
+
+.text {
+  font-family: 'Segoe UI', sans-serif;
+}
+/* Mise en forme du texte*/
+.text-center{
+	text-align : center;
+}
+
+.text-right{
+	text-align : right;
+}
+
+.text-size-125{
+  font-size : 125%;
+}
+
+.text-size-90{
+  font-size : 90%;
+}
+
+.text-size-85{
+  font-size : 85%;
+}
+
+.text-white{
+  color : white;
+}
+
+.left-text {
+  float:left;
+  width:50%
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  bottom: 19px;
+}
+
+.box-title {
+  text-decoration: underline;
+  border: 15px;
+}
+
+.block-box {
+  margin: 10px;
+}
+
+.toggle-menu {
+  cursor: pointer;
+  width: 20px
+}
+
+.box {
+  box-sizing: border-box;
+  width: 45%;
+  height: 45%;
+  float: left;
+  border-radius: 50px;
+  margin: 10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  cursor: pointer;
+}
+
+@media (max-width:1000px) {
+  .box {
+    width: 100%; 
+  }  
+}
+
+.choices {
+  width: 100%;
+}
+
+.box.big {
+  position: absolute;
+  vertical-align: top;
+  width: 90%;
+  height: 90%;
+}
+
+.box.hide {
+  visibility: hidden;
+}
+.box img {
+  max-width:100%;
+  filter: invert(100%);
+}
+
+.overlay {  
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+
+.inputs {
+  position: relative;
+  top:12px;
+  left: 10px;
+  font-size: x-large;
+}
+
+.input-tab {
+  height: 60px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  position: relative;
+  right: 5px;
+}
+.tab {
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  position: relative;
+  display: none;
+  padding: 6px 12px;
+  height: auto;
+  overflow: auto;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  float: left;
+  width: 40%;
+  left: 0;
+
+}
+
+.right {
+  width: 60%;
+  float:right;
+  right: 0;
+}
