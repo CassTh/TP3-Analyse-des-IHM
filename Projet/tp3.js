@@ -1,14 +1,12 @@
-
-
 /*Fichier JS de l'application du Lab 3
 Mise en forme du site web
 Auteurs : 	
-			XXXX Ana -  
+			DAOUDA Anassata - 2037655 
 			AYOTTE-VELTMAN Jasper - 1907425
 			WITTY Julien - 1949837
 			THOLOT Cassandre - 2035978
 Date de création : 30/10/19
-Date de dernière modification : XX/11/19
+Date de dernière modification : 16/11/19
 */
 
 /*Initialisation de la page*/
@@ -54,6 +52,15 @@ function openTab(evt, tab) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tab).style.display = "block";
   evt.currentTarget.className += " active";
+  
+  //Change tab color to show the selected one
+  if(tab == 'Outputs'){
+	$("#defaultTab").css("background-color","#D3D3D3");
+	$("#choicesTab").css("background-color","#A9A9A9");
+  }else if (tab == 'Choices'){
+	$("#choicesTab").css("background-color","#D3D3D3");
+	$("#defaultTab").css("background-color","#A9A9A9");
+  }
 }
 	
 /* toogleMenuVisibility(toHide) : Fonction d'affichage/masquage
