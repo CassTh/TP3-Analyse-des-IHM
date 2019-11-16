@@ -26,6 +26,7 @@ Date de dernière modification : XX/11/19
 function fullscreen(element) {
   var element = document.getElementById(element.id);
   element.classList.toggle("big");
+  element.childNodes[3].classList.toggle("hide");
   var boxes = ["box1", "box2", "box3", "box4" ];
   boxes = boxes.filter(e => e !== element.id);
   for (i = 0; i < boxes.length; i++) {

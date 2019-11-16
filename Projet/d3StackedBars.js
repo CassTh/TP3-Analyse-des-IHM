@@ -1,17 +1,18 @@
 // https://www.d3-graph-gallery.com/graph/sankey_basic.html FOR SANKEY
 
 
-function setUpBarChart(svg) {
+function setUpBarChart(svg, showCaption) {
+
     const chart = {
         domElement: svg,
         height: Number(svg.attr("height")),
         width: Number(svg.attr("width"))
     }
-    
+
     chart.margins = {
             top: 0.1 * chart.height,
             right: 0.1 * chart.width,
-            bottom: 0.15 * chart.height,
+            bottom: (showCaption) ? 0.15 * chart.height : 0.0,
             left: 0.1 * chart.width
         },
     
@@ -30,7 +31,7 @@ function setUpBarChart(svg) {
 }
 
 
-function showStackedBarChart(data, chart, captionType) {
+function showStackedBarChart(data, chart, captionType, showCaption) {
     const tallestBar = data.reduce((a, b) => {
         sizeA = a["shift"] > 0 ? a["baseline"] + a["shift"] : a["baseline"];
         sizeB = b["shift"] > 0 ? b["baseline"] + b["shift"] : b["baseline"];
@@ -54,6 +55,7 @@ function showStackedBarChart(data, chart, captionType) {
         });
 
     bar.append("rect")
+        .style("stroke", "none")
         .attr("class", "baseline")
         .attr("height", (d) => {
             return d["baseline"] * scaleFactor;
@@ -61,6 +63,7 @@ function showStackedBarChart(data, chart, captionType) {
         .attr("width", barWidth);
 
     bar.append("rect")
+        .style("stroke", "none")
         .attr("class", "shift")
         .attr("height", function (d) {
             return (d["baseline"] + d["shift"]) * scaleFactor;
@@ -72,7 +75,9 @@ function showStackedBarChart(data, chart, captionType) {
             return "translate(" + xOffset + "," + yOffset + ")";
         });
 
-        addBarChartCaption(data, chart, barWidth, captionType);
+        if (showCaption) {
+            addBarChartCaption(data, chart, barWidth, captionType);
+        }
 }
 
 function addBarChartCaption(data, chart, barWidth, captionName) {
@@ -105,9 +110,8 @@ function addBarChartCaption(data, chart, barWidth, captionName) {
 
 }
 
-function stackedBarChart(data, captionType, svg) {
-    chart = setUpBarChart(svg);
-    console.log(chart);
-    showStackedBarChart(data, chart, captionType);
+function stackedBarChart(data, captionType, svg, showCaption) {
+    chart = setUpBarChart(svg, showCaption);
+    showStackedBarChart(data, chart, captionType, showCaption);
 }
 

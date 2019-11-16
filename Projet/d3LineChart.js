@@ -1,13 +1,15 @@
-function lineChart(svg, data) {
+function lineChart(svg, data, showCaption) {
     chart = setUpLineChart(svg);
     showLineChart(data, chart);
 
-    let n = Math.floor(chart.width / 100);
-    let x = rangeList(data["xAxis"]["xMin"], data["xAxis"]["xMax"], n);
-    addLineChartCaption(x, data["xAxis"]["xUnit"], chart)
+    if (showCaption) {
+        let n = Math.floor(chart.width / 100);
+        let x = rangeList(data["xAxis"]["xMin"], data["xAxis"]["xMax"], n);
+        addLineChartCaption(x, data["xAxis"]["xUnit"], chart);
+    }
 }
 
-function setUpLineChart(svg) {
+function setUpLineChart(svg, showCaption) {
     const chart = {
         domElement:svg,
         height: Number(svg.attr("height")),
@@ -17,7 +19,7 @@ function setUpLineChart(svg) {
     chart.margins = {
         top: 0.05 * chart.height,
         right: 0.05 * chart.width,
-        bottom: 0.15 * chart.height,
+        bottom: (showCaption) ? 0.15 * chart.height : 0.0,
         left: 0.05 * chart.width
     },
     

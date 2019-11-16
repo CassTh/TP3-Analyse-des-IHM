@@ -552,26 +552,26 @@ Date de dernière modification : XX/11/19
 					<button class="bold text-size-125" onclick="openTab(event, 'Choices')">Choices</button>
 				</div>
 				<div id = "Outputs" class="tabcontent border rounded shadow-sm block-box">
-					<div id = "box1" class="box" onclick = "fullscreen(this)">
-						<svg id="vc_graph" class="graph"></svg>
-						<p>Various changes</p>
+					<div id = "box1" class="box" onclick = "fullscreen(this); vc_update()">
+						<svg id="vc_graph" class="graph" viewBox="0 0 300 150"></svg>
+						<p class="box-title">Various changes</p>
 					</div>
-					<div id = "box2" class="box" onclick = "fullscreen(this)">
-						<svg id="ce_graph" class="graph"></svg>
-						<p>Consumer evolution</p>
+					<div id = "box2" class="box" onclick = "fullscreen(this); ce_update()">
+						<svg id="ce_graph" class="graph" viewBox="0 0 300 150"></svg>
+						<p class="box-title">Consumer evolution</p>
 					</div>
-					<div id = "box3" class="box" onclick = "fullscreen(this)">
-						<svg id="pe_graph" class="graph"></svg>
-						<p>Price elasticity</p>
+					<div id = "box3" class="box" onclick = "fullscreen(this); pe_update()">
+						<svg id="pe_graph" class="graph" viewBox="0 0 300 150"></svg>
+						<p class="box-title">Price elasticity</p>
 					</div>
-					<div id = "box4" class="box" onclick = "fullscreen(this)">
-						<svg id="re_graph" class="graph"></svg>
-						<p>Revenue evolution</p>
+					<div id = "box4" class="box" onclick = "fullscreen(this); re_update()">
+						<svg id="re_graph" class="graph" viewBox="0 0 300 150"></svg>
+						<p class="box-title">Revenue evolution</p>
 					</div>
 				</div>
 				<div id = "Choices" class="tabcontent">
 					<div class = "box choices">
-						<svg id="c_graph" class="graph"></svg>
+						<svg id="c_graph" class="graph" viewBox="0 0 600 300"></svg>
 					</div>
 				</div>
 			</div>
@@ -583,7 +583,7 @@ Date de dernière modification : XX/11/19
     	<script src="d3LineChart.js"></script>
 		<script src="d3Sankey.js"></script>
 		<script src="d3Charts.js"></script>
-		
+
 	</body>
 
 </html>

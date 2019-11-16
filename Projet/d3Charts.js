@@ -228,7 +228,7 @@ let vc_svg = d3.select('#vc_graph').attr("height", 150).attr("width", 300);
 let pe_svg = d3.select('#pe_graph').attr("height", 150).attr("width", 300);
 let ce_svg = d3.select('#ce_graph').attr("height", 150).attr("width", 300);
 let re_svg = d3.select('#re_graph').attr("height", 150).attr("width", 300);
-let c_svg = d3.select('#c_graph').attr("height", 150).attr("width", 300);
+let c_svg = d3.select('#c_graph').attr("height", 300).attr("width", 600);
 
 // Should use that for the merged version
 /* 
@@ -240,36 +240,41 @@ const c_svg = d3.select('#c_graph') */
 
 
 // Init charts
-stackedBarChart(vc_data, "type", vc_svg);
-stackedBarChart(ce_data, "month", ce_svg);
-lineChart(pe_svg, pe_data);
-lineChart(re_svg, re_data[0]);
-sankeyChart(c_data, c_svg);
+stackedBarChart(vc_data, "type", vc_svg, false);
+stackedBarChart(ce_data, "month", ce_svg, false);
+lineChart(pe_svg, pe_data, false);
+lineChart(re_svg, re_data[0], false);
+sankeyChart(c_data, c_svg, false);
 
 function vc_update() {
     vc_svg.selectAll("*").remove();
-    stackedBarChart(vc_data, "type", vc_svg);
+    let showCaption = (vc_svg.node().parentNode.classList[1] == 'big')
+    stackedBarChart(vc_data, "type", vc_svg, showCaption);
 }
 
 function pe_update() {
     pe_svg.selectAll("*").remove();
-    lineChart(pe_svg, pe_data);
+    let showCaption = (pe_svg.node().parentNode.classList[1] == 'big')
+    lineChart(pe_svg, pe_data, showCaption);
 }
 
 function ce_update() {
     ce_svg.selectAll("*").remove();
-    stackedBarChart(ce_data, "month", ce_svg);
+    let showCaption = (ce_svg.node().parentNode.classList[1] == 'big')
+    stackedBarChart(ce_data, "month", ce_svg, showCaption);
 }
 
 function re_update() {
     re_svg.selectAll("*").remove();
-    lineChart(re_svg, re_data[0]);
+    let showCaption = (re_svg.node().parentNode.classList[1] == 'big')
+    lineChart(re_svg, re_data[0], showCaption);
 }
 
 function c_update() {
     c_svg.selectAll("*").remove();
     sankeyChart(c_data, c_svg);
 }
+
 function updateCharts(){
   var slider = document.getElementById("myRange");
   var output = document.getElementById("demo");

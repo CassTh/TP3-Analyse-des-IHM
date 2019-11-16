@@ -1,7 +1,7 @@
 /*Fichier CSS de l'application du Lab 2
 Mise en forme du site web
 Auteurs : 	
-			XXXX Ana -  
+			DAOUDA Anassata - 2037655 
 			AYOTTE-VELTMAN Jasper - 1907425
 			WITTY Julien - 1949837
 			THOLOT Cassandre - 2035978
@@ -9,6 +9,10 @@ Date de création : 30/10/19
 Date de dernière modification : XX/11/19
 */
 
+* {
+  font-family: 'Segoe UI', sans-serif;
+  color:rgb(66, 66, 66);
+}
 
 .inline{
 	display : inline;
@@ -126,8 +130,8 @@ Date de dernière modification : XX/11/19
 }
 
 .box-title {
-  text-decoration: underline;
-  border: 15px;
+  font-weight: 500;
+  margin:20px;
 }
 
 .block-box {
@@ -144,9 +148,9 @@ Date de dernière modification : XX/11/19
   width: 45%;
   height: 45%;
   float: left;
-  border-radius: 50px;
   margin: 10px;
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
   overflow:hidden;
@@ -161,6 +165,7 @@ Date de dernière modification : XX/11/19
 
 .choices {
   width: 100%;
+  height:100%;
 }
 
 .box.big {
@@ -170,12 +175,13 @@ Date de dernière modification : XX/11/19
   height: 90%;
 }
 
-.box.hide {
-  visibility: hidden;
+.box.big svg{
+  width: 90%;
+  height: 90%;
 }
-.box img {
-  max-width:100%;
-  filter: invert(100%);
+
+.hide {
+  visibility: hidden;
 }
 
 .overlay {  
@@ -260,19 +266,13 @@ Date de dernière modification : XX/11/19
   float:right;
   right: 0;
 }
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-* {
-    font-family: 'Segoe UI', sans-serif;
-    color: rgb(66, 66, 66);
-}
-
-body {
-    background-color: white;
-}
 
 svg {
-    background: whitesmoke;
+  width: 100%;
+  height:100%;
+    background: white;
+    transition: all .2s;
 }
 
 .baseline {
@@ -294,7 +294,6 @@ svg {
   .link:hover {
     stroke-opacity: .5;
   }
-
 
 
 svg text {
@@ -337,11 +336,6 @@ input:checked + .pill::before {
 input[type="radio"]:checked + label{
     font-weight:bolder;
 } */
-
-.node text {
-    font-family: 'Segoe UI', sans-serif;
-    fill: rgb(66, 66, 66);
-  }
 
   .link {
     stroke-opacity: .5;
