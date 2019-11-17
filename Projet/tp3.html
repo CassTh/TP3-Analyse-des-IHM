@@ -30,16 +30,19 @@ Date de dernière modification : 16/11/19
 	</head>
 	
 	<body>
-	<div id="page" class="page">
+		<div id="page" class="page">
 			<div id="inputs" class="split left">
 				<div class="width-110 input-tab">
 					<div class="bold text-size-125 inputs">Inputs</div>
 					<div class="row no-padding no-margin justify-content-end">
 						<div class="col-1 no-padding no-margin">
-							<img class = "icon" src="./icones/save.png" height="20"/>
+							<img class = "menu-icon" src="./icons/dark.png" title = "DarkMode" onClick = "toggleDarkMode()"/>
 						</div>
-						<div class="col-1 no-padding no-margin ">
-							<img class = "icon" src="./icones/reset.png" height="20"/>
+						<div class="col-1 no-padding no-margin">
+							<img class = "menu-icon" src="./icons/save.png" title = "Save" />
+						</div>
+						<div class="col-1 no-padding no-margin " title = "Reset" onClick = "updateCharts()">
+							<img class = "menu-icon" src="./icons/reset.png"/>
 						</div>
 					</div>
 				</div>
@@ -59,10 +62,10 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-alpha-data-line" class="row line-heigth-35 ml-1">
 										<div class="col no-margin no-padding text-right">
-											<img class = "cie-image" src = "../alpha.png" title = "Alpha">
+											<img class = "cie-image alpha" src = "./icons/alpha.png" title = "Alpha">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="slideralpha" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">			
+													<input id="slideralpha" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onchange="updateCharts()">			
 											
 												</div>
 												<div id="slider-alpha-value" class="col-2 font-weight-light text-size-90"> <span id="outputAlpha">0%</span>
@@ -150,7 +153,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-alpha-data-line" class="row line-heigth-35 ml-1">
 										<div class="col-2 text-right no-margin no-padding">
-											<img class = "cie-image" src = "../omega.png" title = "All">
+											<img class = "cie-image mobile" src = "./icons/omega.png" title = "All">
 										</div>
 										<div class="col">
 											<div class="row">
@@ -208,7 +211,7 @@ Date de dernière modification : 16/11/19
 						</div>
 						<div id="toggle-menu" class="toggle-menu">
 							<div id="toggle-all" onclick="toggleMenuVisibility('all')" class = "triangle" >
-								<img id="toggle-all-icon" src="./icones/triangle-down.png" height="15"/>
+								<img id="toggle-all-icon" src="./icons/triangle-down.png" height="15"/>
 							</div>
 							<i id = "expand" class = "triangle-text" >Expand</i>
 						</div>
@@ -221,7 +224,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-beta-data-line" class="row line-heigth-35 ml-1">
 										<div class="col-2 no-margin no-padding text-right">
-											<img class = "cie-image" src = "../beta.png" title = "Beta"></div>
+											<img class = "cie-image beta" src = "./icons/beta.png" title = "Beta"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -233,7 +236,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-gamma-data-line" class="row line-heigth-35 ml-1 border-top">
 										<div class="col-2 no-margin no-padding text-right">
-											<img class = "cie-image" src = "../gamma.png" title = "Gamma"></div>
+											<img class = "cie-image gamma" src = "./icons/gamma.png" title = "Gamma"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -245,7 +248,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-delta-data-line" class="row line-heigth-35 ml-1 border-top">
 										<div class="col-2 no-margin no-padding text-right">
-												<img class = "cie-image" src = "../delta.png" title = "Delta"></div>
+												<img class = "cie-image delta" src = "./icons/delta.png" title = "Delta"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -257,7 +260,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-epsilon-data-line" class="row line-heigth-35 ml-1 border-top">
 										<div class="col-2 no-margin no-padding text-right">
-												<img class = "cie-image" src = "../epsilon.png" title = "Epsilon"></div>
+												<img class = "cie-image epsilon" src = "./icons/epsilon.png" title = "Epsilon"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -269,7 +272,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-iota-data-line" class="row line-heigth-35 ml-1 border-top">
 										<div class="col-2 no-margin no-padding text-right">
-												<img class = "cie-image" src = "../iota.png" title = "Iota"></div>
+												<img class = "cie-image iota" src = "./icons/iota.png" title = "Iota"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -281,7 +284,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-theta-data-line" class="row line-heigth-35 ml-1 border-top">
 										<div class="col-2 no-margin no-padding text-right">
-												<img class = "cie-image" src = "../theta.png" title = "Theta"></div>
+												<img class = "cie-image theta" src = "./icons/theta.png" title = "Theta"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -293,7 +296,7 @@ Date de dernière modification : 16/11/19
 									</div>
 									<div id="price-shift-kappa-data-line" class="row line-heigth-35 ml-1 border-top">
 										<div class="col-2 no-margin no-padding text-right">
-												<img class = "cie-image" src = "../kappa.png" title = "Kappa"></div>
+												<img class = "cie-image kappa" src = "./icons/kappa.png" title = "Kappa"></div>
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
@@ -307,7 +310,7 @@ Date de dernière modification : 16/11/19
 							<div id="toggle-menu" class="toggle-menu">
 								<i id = "collapse" class = "triangle-text" >Collapse</i>
 								<div id="toggle-details" onclick="toggleMenuVisibility('details')" class = "triangle" >
-									<img id="toggle-details-icon" src="./icones/triangle-up.png" height="15"/>
+									<img id="toggle-details-icon" src="./icons/triangle-up.png" height="15"/>
 								</div>
 							</div>
 							</div>
@@ -539,7 +542,7 @@ Date de dernière modification : 16/11/19
 					</div>
 				</div>
 			</div>
-			<div class = "split right">
+			<div id = "outputs" class = "split right">
 				<div class="tab row ml-3 mr-3 no-padding justify-content-center border rounded shadow-sm">
 					<button id="defaultTab" class="bold text-size-125 width-50" onclick="openTab(event, 'Outputs')">Outputs</button>
 					<button id="choicesTab" class="bold text-size-125 width-50" onclick="openTab(event, 'Choices')">Choices</button>

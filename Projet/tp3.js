@@ -91,7 +91,13 @@ Retour : 		void
 		}
   }
 
-
+  function toggleDarkMode() {
+    var inputs = document.getElementById("inputs");
+    inputs.classList.toggle("darkmode");
+    
+    var outputs = document.getElementById("outputs");
+    outputs.classList.toggle("darkmode");
+  }
 
 
   window.onload=function(){

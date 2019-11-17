@@ -142,7 +142,16 @@ Date de dernière modification : 16/11/19
   cursor: pointer;
   position: relative;
   bottom: 19px;
+  height: 20px;
 }
+
+.menu-icon {
+  cursor: pointer;
+  position: relative;
+  bottom: 28px;
+  height: 40px;
+}
+
 
 .box-title {
   font-weight: 500;
@@ -259,6 +268,10 @@ Date de dernière modification : 16/11/19
   overflow: auto;
 }
 
+.darkmode {
+  filter: invert(100%);
+}
+
 .split {
   height: 100%;
   width: 50%;
@@ -273,6 +286,7 @@ Date de dernière modification : 16/11/19
   float: left;
   width: 40%;
   left: 0;
+  background-color: white;
 
 }
 
@@ -280,6 +294,7 @@ Date de dernière modification : 16/11/19
   width: 60%;
   float:right;
   right: 0;
+  background-color: white;
 }
 
 
@@ -300,15 +315,14 @@ svg {
     stroke: rgba(48, 48, 48, 0.671);
 }
 
-
 .link {
-    fill: none;
-    stroke: #000;
-    stroke-opacity: .2;
-  }
-  .link:hover {
-    stroke-opacity: .5;
-  }
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
 
 
 svg text {
