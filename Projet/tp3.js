@@ -15,6 +15,7 @@ Date de dernière modification : 16/11/19
 		//Affichage par défaut sur la page
 		$('#toggle-details-icon').hide();
     $('#details').hide();
+    $('#collapse').hide();
     document.getElementById("defaultTab").click();
   });
   
@@ -76,6 +77,8 @@ Retour : 		void
 			// afficher l'autre
 			$('#toggle-details-icon').show();
 			$('#details').show();
+      $('#collapse').show();
+			$('#expand').hide();
 		}else if(toHide == 'details'){
 			// cacher l'icone toHide et le menu lié
 			$('#toggle-details-icon').hide();
@@ -83,6 +86,8 @@ Retour : 		void
 			// afficher l'autre
 			$('#toggle-all-icon').show();
 			$('#all').show();
+      $('#expand').show();
+			$('#collapse').hide();
 		}
   }
 
