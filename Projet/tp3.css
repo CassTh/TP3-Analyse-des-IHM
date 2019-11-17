@@ -306,6 +306,11 @@ li {
     display: inline;
 }
 
+.cie-image {
+  float: left;
+  height: 35px;
+}
+
 /* .pill {
     background:lightgrey;
     padding: 6px 20px;
