@@ -39,7 +39,7 @@ function randomizeSankeyChart() {
       links.push({
         "source": source,
         "target": target + companies.length,
-        "value": Math.random() * 10 + 1
+        "value": Math.random() * 100 + 1
       })
     }
   }
