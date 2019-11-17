@@ -99,6 +99,9 @@ Retour : 		void
     outputs.classList.toggle("darkmode");
   }
 
+  function fakeSave() {
+    alert("Saved current state");
+  }
 
   window.onload=function(){
     var valueAlphaSlider=document.getElementById("slideralpha");
