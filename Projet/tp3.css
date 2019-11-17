@@ -103,6 +103,10 @@ Date de dernière modification : 16/11/19
 	text-align : right;
 }
 
+.text-right{
+	text-align : left;
+}
+
 .text-size-125{
   font-size : 125%;
 }
