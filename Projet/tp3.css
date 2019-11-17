@@ -11,66 +11,66 @@ Date de dernière modification : 16/11/19
 
 * {
   font-family: 'Segoe UI', sans-serif;
-  color:rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
 }
 
-.inline{
-	display : inline;
+.inline {
+  display: inline;
 }
 
-.inline-block{
-	display : inline-block;	
+.inline-block {
+  display: inline-block;
   box-sizing: border-box;
-	
+
 }
 
 /* Dimensions */
-.page{
-  width : 100%;
+.page {
+  width: 100%;
 }
 
-.half-page{
-	max-width : 75%;
+.half-page {
+  max-width: 75%;
 }
 
-.maximale-relative-width-100{
-	max-width : 100% !important;
+.maximale-relative-width-100 {
+  max-width: 100% !important;
 }
 
-.maximale-relative-width-200{
-	max-width : 110% !important;
-	min-width : 75% !important;
+.maximale-relative-width-200 {
+  max-width: 110% !important;
+  min-width: 75% !important;
 }
 
-.maximale-relative-width-150{
-	max-width: 110% !important;
+.maximale-relative-width-150 {
+  max-width: 110% !important;
 }
 
-.line-heigth-20{
-	line-height: 20px  !important;
+.line-heigth-20 {
+  line-height: 20px !important;
 }
 
-.line-heigth-35{
-	line-height: 35px  !important;
+.line-heigth-35 {
+  line-height: 35px !important;
 }
 
-.line-heigth-15{
-	line-height: 15px  !important;
+.line-heigth-15 {
+  line-height: 15px !important;
 }
 
-.height-15{
-	height : 15px !important;
+.height-15 {
+  height: 15px !important;
 }
 
-.width-110{
-	width : 99%;
+.width-110 {
+  width: 99%;
 }
 
-.width-50{
-		width : 50%;
+.width-50 {
+  width: 50%;
 }
 
-.inputs-height{
+.inputs-height {
   height: 60px;
   position: relative;
   top: 25px;
@@ -78,54 +78,55 @@ Date de dernière modification : 16/11/19
 
 /* Margin et padding*/
 
-.no-margin{
-	margin : 0px !important;
+.no-margin {
+  margin: 0px !important;
 }
 
-.no-padding{
-	padding : 0px !important;
+.no-padding {
+  padding: 0px !important;
 }
 
-.margin-t-b-11{
-	margin-top : 11.1px !important;
-	margin-bottom : 11.1px !important;
+.margin-t-b-11 {
+  margin-top: 11.1px !important;
+  margin-bottom: 11.1px !important;
 }
 
 .text {
   font-family: 'Segoe UI', sans-serif;
 }
+
 /* Mise en forme du texte*/
-.text-center{
-	text-align : center;
+.text-center {
+  text-align: center;
 }
 
-.text-right{
-	text-align : right;
+.text-right {
+  text-align: right;
 }
 
-.text-right{
-	text-align : left;
+.text-right {
+  text-align: left;
 }
 
-.text-size-125{
-  font-size : 125%;
+.text-size-125 {
+  font-size: 125%;
 }
 
-.text-size-90{
-  font-size : 90%;
+.text-size-90 {
+  font-size: 90%;
 }
 
-.text-size-85{
-  font-size : 85%;
+.text-size-85 {
+  font-size: 85%;
 }
 
-.text-white{
-  color : white;
+.text-white {
+  color: white;
 }
 
 .left-text {
-  float:left;
-  width:50%
+  float: left;
+  width: 50%
 }
 
 .tarrif-text {
@@ -155,7 +156,7 @@ Date de dernière modification : 16/11/19
 
 .box-title {
   font-weight: 500;
-  margin:20px;
+  margin: 20px;
 }
 
 .block-box {
@@ -182,23 +183,23 @@ Date de dernière modification : 16/11/19
   height: 45%;
   float: left;
   margin: 10px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   cursor: pointer;
 }
 
 @media (max-width:1000px) {
   .box {
-    width: 100%; 
-  }  
+    width: 100%;
+  }
 }
 
 .choices {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .box.big {
@@ -208,7 +209,7 @@ Date de dernière modification : 16/11/19
   height: 90%;
 }
 
-.box.big svg{
+.box.big svg {
   width: 90%;
   height: 90%;
 }
@@ -217,18 +218,18 @@ Date de dernière modification : 16/11/19
   visibility: hidden;
 }
 
-.overlay {  
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  z-index:1000;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .inputs {
   position: relative;
-  top:12px;
+  top: 12px;
   left: 10px;
   font-size: x-large;
 }
@@ -241,6 +242,7 @@ Date de dernière modification : 16/11/19
   position: relative;
   right: 5px;
 }
+
 .tab {
   margin: 10px;
   overflow: hidden;
@@ -292,7 +294,7 @@ Date de dernière modification : 16/11/19
 
 .right {
   width: 60%;
-  float:right;
+  float: right;
   right: 0;
   background-color: white;
 }
@@ -300,19 +302,19 @@ Date de dernière modification : 16/11/19
 
 svg {
   width: 100%;
-  height:100%;
-    background: white;
-    transition: all .2s;
+  height: 100%;
+  background: white;
+  transition: all .2s;
 }
 
 .baseline {
-    fill: rgb(182, 182, 182);
-    stroke: rgb(182, 182, 182);
+  fill: rgb(182, 182, 182);
+  stroke: rgb(182, 182, 182);
 }
 
 .shift {
-    fill: rgba(48, 48, 48, 0.671);
-    stroke: rgba(48, 48, 48, 0.671);
+  fill: rgba(48, 48, 48, 0.671);
+  stroke: rgba(48, 48, 48, 0.671);
 }
 
 .link {
@@ -320,19 +322,20 @@ svg {
   stroke: #000;
   stroke-opacity: .2;
 }
+
 .link:hover {
   stroke-opacity: .5;
 }
 
 
 svg text {
-    fill: rgb(66, 66, 66);
-    font-size: 12px;
-    text-anchor: middle;
+  fill: rgb(66, 66, 66);
+  font-size: 12px;
+  text-anchor: middle;
 }
 
 li {
-    display: inline;
+  display: inline;
 }
 
 .cie-image {
@@ -340,82 +343,52 @@ li {
   height: 35px;
 }
 
-/* .pill {
-    background:lightgrey;
-    padding: 6px 20px;
-    border-radius: 18px;
-    color:white;
-    cursor: pointer;
-    transition: background-color .2s;
+
+.link {
+  stroke-opacity: .5;
+  transition: stroke-opacity .1s;
 }
 
-.pill:hover{
-    background:rgb(177, 177, 177);
+.link:hover {
+  stroke-opacity: 1;
 }
 
-input {
-    position: absolute;
-    opacity:0;
+.alpha {
+  fill: rgb(212, 61, 61);
+  stroke: rgb(212, 61, 61);
 }
 
-input:checked + .pill{
-    background:grey;
+.beta {
+  stroke: rgb(255, 152, 56);
+  fill: rgb(255, 152, 56);
 }
 
-input:checked + .pill::before {
-    padding: 2px 6px 2px 2px;
-    content:"\00d7";
+.gamma {
+  stroke: hsl(47, 100%, 62%);
+  fill: hsl(47, 100%, 62%);
 }
 
-input[type="radio"]:checked + label{
-    font-weight:bolder;
-} */
+.epsilon {
+  stroke: rgb(130, 221, 217);
+  fill: rgb(130, 221, 217);
+}
 
-  .link {
-    stroke-opacity: .5;
-    transition: stroke-opacity .1s;
-  }
+.mobile {
+  stroke: rgb(83, 83, 182);
+  fill: rgb(83, 83, 182);
+}
 
-  .link:hover {
-    stroke-opacity: 1;
-  }
+.iota {
+  stroke: rgb(192, 84, 192);
+  fill: rgb(192, 84, 192);
+}
 
-  .alpha {
-    fill: rgb(212, 61, 61);
-    stroke: rgb(212, 61, 61);
-  }
+.theta {
+  stroke: rgb(255, 113, 172);
+  fill: rgb(255, 113, 172);
+}
 
-  .beta {
-    stroke: rgb(255, 152, 56);
-    fill: rgb(255, 152, 56);
-  }
-
-  .gamma {
-    stroke: hsl(47, 100%, 62%);
-    fill: hsl(47, 100%, 62%);
-  }
-
-  .epsilon {
-    stroke: rgb(130, 221, 217);
-    fill: rgb(130, 221, 217);
-  }
-
-  .mobile {
-    stroke: rgb(83, 83, 182);
-    fill: rgb(83, 83, 182);
-  }
-
-  .iota {
-    stroke: rgb(192, 84, 192);
-    fill: rgb(192, 84, 192);
-  }
-
-  .theta {
-    stroke: rgb(255, 113, 172);
-    fill: rgb(255, 113, 172);
-  }
-
-  .kappa {
-    stroke: rgb(78, 78, 78);
-    fill: rgb(78, 78, 78);
-  }
+.kappa {
+  stroke: rgb(78, 78, 78);
+  fill: rgb(78, 78, 78);
+}

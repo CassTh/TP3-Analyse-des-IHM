@@ -1,5 +1,5 @@
 function lineChart(svg, data, showCaption) {
-    chart = setUpLineChart(svg);
+    chart = setUpLineChart(svg, showCaption);
     showLineChart(data, chart);
 
     if (showCaption) {
@@ -17,7 +17,7 @@ function setUpLineChart(svg, showCaption) {
     };
     
     chart.margins = {
-        top: 0.05 * chart.height,
+        top: 0.1 * chart.height,
         right: 0.05 * chart.width,
         bottom: (showCaption) ? 0.15 * chart.height : 0.0,
         left: 0.05 * chart.width
@@ -38,9 +38,8 @@ function setUpLineChart(svg, showCaption) {
 }
 
 function showLineChart(data, chart) {
-    
     addLine(data["baseline"], "baseline", chart);
-    addLine(data["shift"].reverse(), "shift", chart);
+    addLine(data["shift"], "shift", chart);
 }
 
 function rangeList(start, end, size) {
@@ -101,7 +100,7 @@ function addLineChartCaption(x, unit, chart) {
         .enter()
         .append("text")
         .attr("x", function (d, i) {
-            return i * chart.width / (x.length - 1) + chart.margins.left;
+            return i * chart.width / (x.length) + chart.margins.left + chart.margins.right;
         })
         .attr("y", () => {
             return chart.height - 0.5 * chart.margins.bottom;

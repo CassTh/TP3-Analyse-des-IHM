@@ -20,13 +20,12 @@ Date de dernière modification : 16/11/19
 		
 		<link rel="stylesheet" href="tp3.css">						
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		
+
 		<script src="jquery-3.4.1.js"></script>
 		<script src="tp3.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		
 	</head>
 	
 	<body>
@@ -65,10 +64,10 @@ Date de dernière modification : 16/11/19
 											<img class = "cie-image alpha" src = "./icons/alpha.png" title = "Alpha">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="slideralpha" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onchange="updateCharts()">			
+													<input id="sliderAlpha" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">			
 											
 												</div>
-												<div id="slider-alpha-value" class="col-2 font-weight-light text-size-90"> <span id="outputAlpha">0%</span>
+												<div id="slider-alpha-value" class="col-2 font-weight-light text-size-90"> <span class="slider-value" id="outputAlpha">0%</span>
 												</div>
 											</div>
 										</div>
@@ -100,7 +99,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-alpha-none" name="alpha"  class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-alpha-none" name="alpha"  class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-alpha-5" name="alpha" class="mx-auto margin-t-b-11" type="radio" value="5">
@@ -123,7 +122,7 @@ Date de dernière modification : 16/11/19
 							<div id="high-data-tariff-data" class="col no-margin no-padding"> 
 								<div class="row no-padding no-margin">
 									<div class="col-3 no-padding no-margin form-check-inline">
-										<input class="form-check-input" name="highData" type="radio" value="none">
+										<input class="form-check-input" name="highData" type="radio" value="none" checked>
 										<label class="no-padding text-right">None</label>
 									</div>
 									<div class="col-3 no-padding no-margin form-check-inline">
@@ -158,9 +157,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 text-left">
-													<input id="sliderAll" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderAll" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-all-value" class="col-2 font-weight-light text-size-90 "> <span id="outputAll">0%</span></div>
+												<div id="slider-all-value" class="col-2 font-weight-light text-size-90 "> <span class="slider-value" id="outputAll">0%</span class="slider-value"></div>
 											</div>
 										</div>
 									</div>
@@ -192,7 +191,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-all-none" name="all" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-all-none" name="all" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-all-5" name="all" class="mx-auto margin-t-b-11" type="radio" value="5" disabled>
@@ -228,9 +227,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="sliderBeta" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderBeta" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-beta-value" class="col-2 font-weight-light text-size-90 "><span class = "text-left "id="outputbeta">0%</span></div>
+												<div id="slider-beta-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" class = "text-left "id="outputbeta">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -240,9 +239,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="sliderGamma" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderGamma" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-gamma-value" class="col-2 font-weight-light text-size-90 "><span id="outputgamma">0%</span></div>
+												<div id="slider-gamma-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" id="outputgamma">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -252,9 +251,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="sliderDelta" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderDelta" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-delta-value" class="col-2 font-weight-light text-size-90 "><span id="outputdelta">0%</span></div>
+												<div id="slider-delta-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" id="outputdelta">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -264,9 +263,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="sliderEpsilon" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderEpsilon" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-epsilon-value" class="col-2 font-weight-light text-size-90 "><span id="outputepsilon">0%</span></div>
+												<div id="slider-epsilon-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" id="outputepsilon">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -278,7 +277,7 @@ Date de dernière modification : 16/11/19
 												<div class="col-8 no-margin">
 													<input id="sliderIota" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150">
 												</div>
-												<div id="slider-iota-value" class="col-2 font-weight-light text-size-90 "><span id="outputiota">0%</span></div>
+												<div id="slider-iota-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" id="outputiota">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -288,9 +287,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="sliderTheta" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderTheta" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-theta-value" class="col-2 font-weight-light text-size-90 "><span id="outputtheta">0%</span></div>
+												<div id="slider-theta-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" id="outputtheta">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -300,9 +299,9 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row">
 												<div class="col-8 no-margin">
-													<input id="sliderKappa" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" onChange="updateCharts()">
+													<input id="sliderKappa" type="range" min="-50" max="50" value="0" class="slider maximale-relative-width-150" >
 												</div>
-												<div id="slider-kappa-value" class="col-2 font-weight-light text-size-90 "><span id="outputkappa">0%</span></div>
+												<div id="slider-kappa-value" class="col-2 font-weight-light text-size-90 "><span class="slider-value" id="outputkappa">0%</span></div>
 											</div>
 										</div>
 									</div>
@@ -340,7 +339,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-beta-none" name="beta" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-beta-none" name="beta" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-beta-5" name="beta" class="mx-auto margin-t-b-11" type="radio" value="5">
@@ -359,7 +358,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-gamma-none" name="gamma" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-gamma-none" name="gamma" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-gamma-5" name="gamma" class="mx-auto margin-t-b-11" type="radio" value="5">
@@ -378,7 +377,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-delta-none" name="delta" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-delta-none" name="delta" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-delta-5" name="delta" class="mx-auto margin-t-b-11" type="radio" value="5">
@@ -397,7 +396,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-epsilon-none" name="epsilon" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-epsilon-none" name="epsilon" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-epsilon-5" name="epsilon" class="mx-auto margin-t-b-11" type="radio" value="5">
@@ -416,7 +415,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-iota-none" name="iota" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-iota-none" name="iota" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-iota-5" name="iota" class="mx-auto margin-t-b-11" type="radio" value="5" disabled>
@@ -435,7 +434,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-theta-none" name="theta" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-theta-none" name="theta" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-theta-5" name="theta" class="mx-auto margin-t-b-11" type="radio" value="5" disabled>
@@ -454,7 +453,7 @@ Date de dernière modification : 16/11/19
 										<div class="col">
 											<div class="row justify-content-center">
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
-													 <input id="radio-kappa-none" name="kappa" class="mx-auto margin-t-b-11" type="radio" value="none">
+													 <input id="radio-kappa-none" name="kappa" class="mx-auto margin-t-b-11" type="radio" value="none" checked>
 												</div>
 												<div class="col form-check-inline no-margin no-padding justify-content-center">
 													 <input id="radio-kappa-5" name="kappa" class="mx-auto margin-t-b-11" type="radio" value="5" disabled>
@@ -499,11 +498,11 @@ Date de dernière modification : 16/11/19
 							<div id="consumer-type-data-1" class="col no-margin no-padding"> 
 								<div class="row no-padding no-margin">
 									<div class="col-7 no-padding no-margin form-check-inline">
-										<input id="consumer-type-savvy-surfer" class="form-check-input" type="checkbox" value="">
+										<input id="consumer-type-savvy-surfer" class="form-check-input" type="checkbox" value="" checked>
 										<label class="no-padding text-right">Savvy Surfer</label>
 									</div>
 									<div class="col-5 no-margin no-padding form-check-inline">
-										<input id="consumer-type-digital-dynamos" class="form-check-input" type="checkbox" value="">
+										<input id="consumer-type-digital-dynamos" class="form-check-input" type="checkbox" value="" checked>
 										<label class="no-padding">Digital Dynamos</label>
 									</div>
 								</div>
@@ -514,11 +513,11 @@ Date de dernière modification : 16/11/19
 							<div id="consumer-type-data-2" class="col no-margin no-padding"> 
 								<div class="row no-padding no-margin">
 									<div class="col-7 no-padding no-margin form-check-inline">
-										<input id="consumer-type-top-end-techtastic" class="form-check-input" type="checkbox" value="">
+										<input id="consumer-type-top-end-techtastic" class="form-check-input" type="checkbox" value="" checked>
 										<label class="no-padding">Top-end Techtastic</label>
 									</div>
 									<div class="col-5 no-padding no-margin form-check-inline">
-										<input id="consumer-type-price-prioritizer" class="form-check-input" type="checkbox" value="">
+										<input id="consumer-type-price-prioritizer" class="form-check-input" type="checkbox" value="" checked>
 										<label class="no-padding">Price Prioritizer</label>
 									</div>
 								</div>
@@ -529,11 +528,11 @@ Date de dernière modification : 16/11/19
 							<div id="consumer-type-data-3" class="col no-margin no-padding"> 
 								<div class="row no-padding no-margin">
 									<div class="col-7 no-padding no-margin form-check-inline">
-										<input id="consumer-type-indulgent-imitators" class="form-check-input" type="checkbox" value="">
+										<input id="consumer-type-indulgent-imitators" class="form-check-input" type="checkbox" value="" checked>
 										<label class="no-padding">Indulgent Imitators</label>
 									</div>
 									<div class="col-5 no-padding no-margin form-check-inline">
-										<input id="consumer-type-hesitant-homebodies" class="form-check-input" type="checkbox" value="">
+										<input id="consumer-type-hesitant-homebodies" class="form-check-input" type="checkbox" value="" checked>
 										<label class="no-padding">Hesitant Homebodies</label>
 									</div>
 								</div>
