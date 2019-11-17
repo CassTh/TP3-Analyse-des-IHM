@@ -55,11 +55,11 @@ function openTab(evt, tab) {
   
   //Change tab color to show the selected one
   if(tab == 'Outputs'){
-	$("#defaultTab").css("background-color","#D3D3D3");
-	$("#choicesTab").css("background-color","#A9A9A9");
-  }else if (tab == 'Choices'){
-	$("#choicesTab").css("background-color","#D3D3D3");
 	$("#defaultTab").css("background-color","#A9A9A9");
+	$("#choicesTab").css("background-color","#D3D3D3");
+  }else if (tab == 'Choices'){
+	$("#choicesTab").css("background-color","#A9A9A9");
+	$("#defaultTab").css("background-color","#D3D3D3");
   }
 }
 	
@@ -68,7 +68,7 @@ du menu dépliant entre tous les concurrents et leur regroupement.
 // Paramètres :	toHide le nom de l'icône à masquer
 Retour : 		void
 */ 
-	function toogleMenuVisibility(toHide) {
+	function toggleMenuVisibility(toHide) {
 		if(toHide =='all'){
 			// cacher l'icone toHide et le menu lié
 			$('#toggle-all-icon').hide();
