@@ -1,13 +1,12 @@
-
 <!--Fichier HTML de l'application du Lab 2
 Déclaration de la structure du site web
 Auteurs : 	
-			XXXX Ana -  
+			DAOUDA Anassata - 2037655 
 			AYOTTE-VELTMAN Jasper - 1907425
 			WITTY Julien - 1949837
 			THOLOT Cassandre - 2035978
 Date de création : 30/10/19
-Date de dernière modification : XX/11/19
+Date de dernière modification : 16/11/19
 -->
 
 <!DOCTYPE html>
@@ -38,17 +37,17 @@ Date de dernière modification : XX/11/19
 						<div class="col font-weight-bold no-padding pl-1 ml-1 text-size-125">Inputs</div>
 						<div id ="inputs-icons" class="col no-padding no-margin">
 							<div class="row no-padding no-margin justify-content-end">
-								<div class="col-1 no-padding no-margin">
+								<div class="col-1 no-padding no-margin mr-1">
 									<img src="./icones/save.png" height="15"/>
 								</div>
-								<div class="col-1 no-padding no-margin">
+								<div class="col-1 no-padding no-margin mr-2">
 									<img src="./icones/reset.png" height="15"/>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 mb-2 width-120">
 					<div class="font-weight-bold no-padding">Alpha</div>
 					<div id="inputs-alpha" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
 						<div class="row no-padding no-margin maximale-relative-width-100">
@@ -140,7 +139,7 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div> 
-				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 mb-2 width-120">
 					<div class="font-weight-bold no-padding">Others</div>
 					<div id="toggle-menu" class="no-padding ml-2 mr-1 line-heigth-15 border-top border-bottom border-light">
 						<div id="toggle-all" onclick="toogleMenuVisibility('all')" class="row no-padding no-margin justify-content-center">
@@ -482,7 +481,7 @@ Date de dernière modification : XX/11/19
 						</div>
 					</div>
 				</div>                                                                             
-				<div class="border rounded shadow-sm pt-2 ml-1 p-2 width-120">
+				<div class="border rounded shadow-sm pt-2 ml-1 p-2 mb-2 width-120">
 					<div class="font-weight-bold no-padding">Filters</div>
 					<div id="table-filters" class="container-fluid text-size-85 no-padding pl-2 pr-2 no-margin maximale-relative-width-100">
 						<div id="consumer-segment" class="row no-padding no-margin maximale-relative-width-100 mb-2">
@@ -553,11 +552,11 @@ Date de dernière modification : XX/11/19
 				</div>
 			</div>
 			<div class = "split right">
-				<div class="tab">
-					<button  id="defaultTab" class=" bold text-size-125" onclick="openTab(event, 'Outputs')">Outputs</button>
-					<button class="bold text-size-125" onclick="openTab(event, 'Choices')">Choices</button>
+				<div class="tab row ml-3 mr-3 no-padding justify-content-center border rounded shadow-sm">
+					<button id="defaultTab" class="bold text-size-125 width-50" onclick="openTab(event, 'Outputs')">Outputs</button>
+					<button id="choicesTab" class="bold text-size-125 width-50" onclick="openTab(event, 'Choices')">Choices</button>
 				</div>
-				<div id = "Outputs" class="tabcontent border rounded shadow-sm block-box">
+				<div id = "Outputs" class="tabcontent border rounded shadow-sm block-box ml-3 mr-3">
 					<div id = "box1" class="box" onclick = "fullscreen(this); vc_update()">
 						<svg id="vc_graph" class="graph" viewBox="0 0 300 150"></svg>
 						<p class="box-title">Various changes</p>
@@ -575,7 +574,7 @@ Date de dernière modification : XX/11/19
 						<p class="box-title">Revenue evolution</p>
 					</div>
 				</div>
-				<div id = "Choices" class="tabcontent">
+				<div id = "Choices" class="tabcontent border rounded shadow-sm block-box ml-3 mr-3">
 					<div class = "box choices">
 						<svg id="c_graph" class="graph" viewBox="0 0 600 300"></svg>
 					</div>
